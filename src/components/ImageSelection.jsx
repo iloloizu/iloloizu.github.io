@@ -31,7 +31,7 @@ function ImageSelection() {
                 My name is Ilolo Izu (e-lo-lo e-zu), known some places by my first name—Justin! I graduated with a Bachelor's degree focused in Allied Health with a Minor in Business Administration from Texas A&M University in December 2019. I am transitioning from the 4 years of experience in the Medical Field. I'm currently enrolled in the Software Engineering program at Flatiron School. So far in the program, I have created three web applications in Javascript, React, SQLite, and Ruby. Some examples are a health and wellness calendar/to-do list and a wishlist app. I have learned HTML, CSS, Javascript, React, SQL, and Ruby. In the coming weeks, I will learn Ruby on Rails, Sinatra, and more. 
                 I'm looking for Frontend Software Engineering roles primarily, and secondly for roles as a Full-Stack Software Engineer. I am very interested in being in an environment where I can grow, learning languages such as Python, Java, C#, C++, Vue.js, three.js, etc, or bettering my growing interest in UI/UX. 
                 </p> 
-                <br/> <a href='https://drive.google.com/file/d/1QzcREXV8AaufL-Um-geL6Q4WFE6bZrkm/view?usp=sharing' target="_blank">
+                <br/> <a href='https://drive.google.com/file/d/1gFuk_XjjfXCoKZq0oXpxTVWqM9gu0GVg/view?usp=sharing' target="_blank">
                 <button className="btn">Download Résumé</button></a>
                 <br/> <a href='https://drive.google.com/file/d/1NBmiCO9gu5XBVaNNbOQutQlVzkdq8iXZ/view?usp=sharing' target="_blank">
                 <button className="btn">Download Cover Letter</button></a>
