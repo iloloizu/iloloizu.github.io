@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap");
+@import "./navbar.scss";
+@import "./typ.css";
+@import "./title.css";
+@import "./app_layout.scss";
+@import "./_about.scss";
+@import "./_skill.scss";
+@import "./_services.scss";
+@import "./_blogs.scss";
+@import "./_contact.scss";
+@import "./_portfolio.scss";
+
+/* /* CSV *
+#8276FC, #083863, #D884FE, #01FFFF, #010510 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #10121b;
+}
+
+body {
+  color: #a4acc4;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+span {
+  color: #037fff;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #0056d874;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(119, 119, 119, 0.421);
+}
+
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 70%;
+  }
+  h3 {
+    font-size: 70%;
+  }
+}
