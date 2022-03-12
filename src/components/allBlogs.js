@@ -6,9 +6,18 @@ const blog5 = "https://miro.medium.com/max/1400/1*hPFJwDLsLng-AEFin8IAOg.jpeg"
 const blog6 = "https://miro.medium.com/max/1400/1*OVvPD2RDLdpaijieATc52w.jpeg"
 const blog7 = "https://miro.medium.com/max/1400/1*vgqmgxAUeiKbUFYmnrUpsw.jpeg"
 const blog8 = "https://miro.medium.com/max/700/1*RyftmgpGjH1yx45GtvTb_A.jpeg"
-
+const blog9 = "https://miro.medium.com/max/1400/1*k0wTPCyT-Oq2bT_2RX0C_Q.jpeg"
 
 const blogs = [
+    {
+        id: 9,
+        image: blog9,
+        title: 'Using Serializer With Your Ruby on Rails API',
+        link: 'https://ilolo.medium.com/using-serializer-with-your-ruby-on-rails-api-e76795f4b3ad',
+        date : '11',
+        month: 'Mar',
+        year: '2022'
+    },
     {
         id: 8,
         image: blog8,
