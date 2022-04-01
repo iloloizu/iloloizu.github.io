@@ -7,8 +7,28 @@ const blog6 = "https://miro.medium.com/max/1400/1*OVvPD2RDLdpaijieATc52w.jpeg"
 const blog7 = "https://miro.medium.com/max/1400/1*vgqmgxAUeiKbUFYmnrUpsw.jpeg"
 const blog8 = "https://miro.medium.com/max/700/1*RyftmgpGjH1yx45GtvTb_A.jpeg"
 const blog9 = "https://miro.medium.com/max/1400/1*k0wTPCyT-Oq2bT_2RX0C_Q.jpeg"
+const blog10 = "https://miro.medium.com/max/700/1*6JthQpQWGLj9POunHaJKWA.jpeg"
+const blog11 = "https://miro.medium.com/max/700/1*P7Q7N9g1NA5jYa31nM3tAw.gif"
 
 const blogs = [
+    {
+        id: 11,
+        image: blog11,
+        title: "How to add a Dark Mode button with ReactJS",
+        link: 'https://medium.com/@ilolo/how-to-add-a-dark-mode-button-with-reactjs-ec03b4630cd1',
+        date : '30',
+        month: 'Mar',
+        year: '2022'
+    },
+    {
+        id: 10,
+        image: blog10,
+        title: "Phase 4: We’re So Close",
+        link: 'https://medium.com/@ilolo/phase-4-were-so-close-c81d88abe899',
+        date : '17',
+        month: 'Mar',
+        year: '2022'
+    },
     {
         id: 9,
         image: blog9,
