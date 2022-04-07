@@ -4,7 +4,7 @@
 
 .contact:hover {
   background-color: #47a3ff;
-  box-shadow: none;
+  box-shadow: inset 5em 1em #47a3ff;
   transform: translate(4px, 3px);
   color: #161925 !important;
 }
@@ -12,13 +12,14 @@
 .contact {
   display: flex;
   align-items: center;
-  background-color: #191d2b;
+  background-image: linear-gradient(135deg, #54545441, #171717b1);
+  border-radius: 20px;
   padding: 3rem 0;
-  box-shadow: inset 5em 1em #383e52;
   transition: 0.3s;
 }
 
 .contact img {
+  
   width: 25%;
   padding: 0.5rem;
   margin-left: 0.3rem;
@@ -55,14 +56,14 @@ h6 {
 .map-sect {
   width: 97%;
   padding: 1rem;
-  background-color: #191d2b;
-  box-shadow: inset 5em 1em #383e52;
+  background-image: linear-gradient(135deg, #54545441, #171717b1);
+  border-radius: 20px;
   transition: 0.3s;
 }
 
 .map-sect:hover {
   background-color: #47a3ff;
-  box-shadow: none;
+  box-shadow: inset 5em 1em #47a3ff;
   color: #161925 !important;
   transform: translate(4px, 3px);
 }
