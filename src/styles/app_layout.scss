@@ -5,7 +5,7 @@
     background-color: #191d2bf5;
     background-image: url(../images/dots.svg);
     position: fixed;
-    z-index: 11;
+    z-index: 20;
     transform-origin: left;
     @media screen and (max-width: 1000px) {
       transition: all 0.4s ease-in-out;
@@ -28,12 +28,15 @@
     margin-left: 16%;
     background-color: #10121bf9;
     min-height: 100vh;
+    z-index: 10 !important;
+    /* background-image: linear-gradient(135deg, rgb(2, 17, 36), rgb(229, 36, 229)); */
     background-image: url(../images/Gradient-Blur-2.jpg);
     background-size: 3400px;
     background-position: center;
     display: grid;
     position: relative;
     .content {
+      z-index: 11 !important;
       margin: 5rem 15rem;
       @media screen and (max-width: 1100px) {
         margin: 2rem 10rem;
@@ -57,7 +60,7 @@
 
 .nav-btn {
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   right: 10%;
   top: 5%;
   width: 4rem;

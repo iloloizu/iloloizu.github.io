@@ -13,17 +13,20 @@
 }
 
 .blog {
-  background-color: #161925;
+  
   width: 100%;
   padding: 1rem;
   overflow: hidden;
-  box-shadow: inset 5em 1em #383e52;
+  /* box-shadow: inset 5em 1em #383e52;
+  color: #fbfff7; */
+  background-image: linear-gradient(135deg, #54545441, #171717b1);
+  border-radius: 20px;
   transition: 0.3s;
 }
 
 .blog:hover {
   background-color: #47a3ff;
-  box-shadow: none;
+  box-shadow: inset 5em 1em #47a3ff;
   color: #161925 !important;
   transform: translate(4px, 3px);
 }

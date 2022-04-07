@@ -50,7 +50,14 @@ export default function App() {
               </Route>
               
           </Routes>
+          {/* <div className="stars-overflow"> */}
           </div>
+        <div className="starfield">
+                    <div id='stars'></div>
+                  {/* </div> */}
+                  <div id='stars2'></div>
+                  <div id='stars3'></div>
+        </div>
       </div>
     </div>
   )

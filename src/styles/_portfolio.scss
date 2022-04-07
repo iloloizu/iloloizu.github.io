@@ -53,13 +53,14 @@ li {
 
 .image-data {
   padding-bottom: 1rem;
-  background-color: #161925;
-  box-shadow: inset 5em 1em #383e52;
+  color: #fbfff7;
+  background-image: linear-gradient(135deg, #54545441, #171717b1);
+  border-radius: 20px;
   transition: 0.3s;
 }
 
 .image-data:hover {
-  background-color: #47a3ff;
+  background-color: #47a3ff9e;
   box-shadow: inset 5em 1em #47a3ff;
-  color: #161925;
+  color: white;
 }

@@ -63,3 +63,21 @@ body::-webkit-scrollbar-track {
     font-size: 70%;
   }
 }
+
+.App {
+  
+  overflow: hidden;
+
+}
+
+  /* // background-image: url(../images/Gradient-Blur-2.jpg); */
+
+/* 
+  .blog {
+    background-color: #161925;
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: inset 5em 1em #383e52;
+    transition: 0.3s;
+  } */

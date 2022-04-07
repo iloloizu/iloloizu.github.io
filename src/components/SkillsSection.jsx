@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SkillsSection({skill,progress, length}) {
+function SkillsSection({skill, progress, length}) {
     return (
         <div className="SkillsSection">
             <div className="skills-container">

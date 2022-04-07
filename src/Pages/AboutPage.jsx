@@ -19,13 +19,19 @@ export default function AboutPage() {
                 <SkillsSection skill={'Javascript'} progress={'75%'} length={'75%'} />
                 <SkillsSection skill={'Ruby'} progress={'60%'} length={'60%'} />
                 <SkillsSection skill={'ReactJS'} progress={'75%'} length={'75%'} />
+                <SkillsSection skill={'Heroku'} progress={'35%'} length={'35%'} />
+                <SkillsSection skill={'Github'} progress={'70%'} length={'70%'} />
+                <SkillsSection skill={'Redux'} progress={'25%'} length={'25%'} />
                 <SkillsSection skill={'SQLite'} progress={'40%'} length={'40%'} />
+                <SkillsSection skill={'Leadership'} progress={'100%'} length={'100%'} />
                 <SkillsSection skill={'CSS'} progress={'70%'} length={'70%'} />
+                <SkillsSection skill={'Bootstrap'} progress={'70%'} length={'70%'} />
+                <SkillsSection skill={'Material UI'} progress={'70%'} length={'70%'} />
                 <SkillsSection skill={'HTML'} progress={'90%'} length={'90%'} />
                 <SkillsSection skill={'Object Oriented Programming'} progress={'40%'} length={'40%'} />
                 <SkillsSection skill={'Data Structures & Algorithms'} progress={'20%'} length={'20%'} />
                 <SkillsSection skill={'Adobe Photoshop'} progress={'80%'} length={'80%'} />
-                <SkillsSection skill={'Adobe Premier Pro'} progress={'90%'} length={'90'} />
+                <SkillsSection skill={'Adobe Premier Pro'} progress={'90%'} length={'90%'} />
                 <SkillsSection skill={'Willingness to Learn'} progress={'100%'} length={'100%'} />
                 <SkillsSection skill={'Coachable'} progress={'100%'} length={'100%'} />
             </div>
