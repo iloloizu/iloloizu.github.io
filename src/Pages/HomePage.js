@@ -14,8 +14,8 @@ export default function HomePage() {
           </h1>
           <p className='h-sub-text'>
           Welcome to my website, here you can join the journey and follow me in my path to success in the field of
-            web development. My name is Ilolo Izu (e-lo-lo e-zu), known some places by my first name—Justin! I graduated from Texas A&M University in December 2019. 
-            I am transitioning from years of experience in the Medical Field. I'm currently enrolled in the Software Engineering program at Flatiron School. 
+            web development. My name is Ilolo Izu (e-lo-lo e-zu), known some places by my first name—Justin. I graduated from Texas A&M University in December 2019. 
+            I also recently graduated from the Software Engineering program at Flatiron School, and am currently seeking developer positions. Below you can find a link to all of my socials.
           </p>
           <div className='icons'>
             <a href='https://www.linkedin.com/in/ilolo-izu/' className='icon'>LinkedIn</a>
