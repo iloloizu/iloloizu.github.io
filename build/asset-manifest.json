@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.29d6bc1f.css",
-    "main.js": "/static/js/main.55011697.js",
+    "main.css": "/static/css/main.76d1f313.css",
+    "main.js": "/static/js/main.c868ec62.js",
     "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
     "static/media/trackweb.png": "/static/media/trackweb.08fd04a98b16a1b47acd.png",
+    "static/media/spacecity.png": "/static/media/spacecity.ddd4ea077bee11ea6c4c.png",
     "static/media/Photography.jpg": "/static/media/Photography.e558a8d983cebe29cf41.jpg",
     "static/media/Leadershipweb.png": "/static/media/Leadershipweb.86442009f9422ca71142.png",
+    "static/media/eldenring.png": "/static/media/eldenring.7df44b9ab0225f1685e4.png",
     "static/media/Gradient-Blur-2.jpg": "/static/media/Gradient-Blur-2.075f513d1d781dacce9c.jpg",
     "static/media/about.png": "/static/media/about.806925b1be3755837170.png",
     "static/media/Oishii.png": "/static/media/Oishii.cbfa1d7983476b03ca49.png",
@@ -21,12 +23,12 @@
     "static/media/phone.png": "/static/media/phone.cfea9f9604820595a483.png",
     "static/media/mail.png": "/static/media/mail.4096476f6a9b4745fa40.png",
     "index.html": "/index.html",
-    "main.29d6bc1f.css.map": "/static/css/main.29d6bc1f.css.map",
-    "main.55011697.js.map": "/static/js/main.55011697.js.map",
+    "main.76d1f313.css.map": "/static/css/main.76d1f313.css.map",
+    "main.c868ec62.js.map": "/static/js/main.c868ec62.js.map",
     "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29d6bc1f.css",
-    "static/js/main.55011697.js"
+    "static/css/main.76d1f313.css",
+    "static/js/main.c868ec62.js"
   ]
 }
