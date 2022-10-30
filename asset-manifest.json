@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6280bc5e.css",
-    "main.js": "/static/js/main.1f18435a.js",
+    "main.js": "/static/js/main.2bf3f365.js",
     "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
     "static/media/blog11.gif": "/static/media/blog11.d67f1a45a39ac2bc16a2.gif",
     "static/media/spacecitysneakers.png": "/static/media/spacecitysneakers.44e60acbcdd01ede6743.png",
@@ -30,11 +30,11 @@
     "static/media/mail.png": "/static/media/mail.4096476f6a9b4745fa40.png",
     "index.html": "/index.html",
     "main.6280bc5e.css.map": "/static/css/main.6280bc5e.css.map",
-    "main.1f18435a.js.map": "/static/js/main.1f18435a.js.map",
+    "main.2bf3f365.js.map": "/static/js/main.2bf3f365.js.map",
     "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6280bc5e.css",
-    "static/js/main.1f18435a.js"
+    "static/js/main.2bf3f365.js"
   ]
 }
