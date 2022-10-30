@@ -1,6 +1,10 @@
 .SkillsSection {
   margin: 0.75rem 0;
 }
+
+.skill-header{
+  display: flex;
+}
 .skills-container {
   .skill-title {
     font-size: 1.4rem;
@@ -10,9 +14,16 @@
   .skill-bar {
     display: flex;
     align-items: center;
-    .skill-text {
-    }
   }
+}
+
+.language-icon{
+  margin-top: 0.15rem;
+  color: white;
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
 }
 
 .s-text {

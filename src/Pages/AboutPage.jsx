@@ -8,7 +8,12 @@ import photography from '../images/Photography.jpg'
 import webdesign from '../images/WebDesign.JPG'
 import track from '../images/trackweb.png'
 
+import { faReact, faPython, faVuejs, faHtml5, faCss3, faSass, faGithub, faBootstrap } from '@fortawesome/free-brands-svg-icons'
+
 export default function AboutPage() {
+
+  const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_2048_1536/0/1654040507406?e=1669852800&v=beta&t=oZstMr2vtBF9rqd5aarodciqZbkMBz1Szg_VlWn6-PA"
+
   return (
     <div>
       <Title title={'About Me'} span={'About Me'}/>
@@ -16,29 +21,34 @@ export default function AboutPage() {
       <ImageSelection />
             <Title title={'My Skills'} span={'My Skills'} />
             <div className="skillsContainer">
-                <SkillsSection skill={'Javascript'} progress={'75%'} length={'75%'} />
-                <SkillsSection skill={'Ruby'} progress={'60%'} length={'60%'} />
-                <SkillsSection skill={'ReactJS'} progress={'75%'} length={'75%'} />
-                <SkillsSection skill={'Heroku'} progress={'35%'} length={'35%'} />
-                <SkillsSection skill={'Github'} progress={'70%'} length={'70%'} />
-                <SkillsSection skill={'Redux'} progress={'25%'} length={'25%'} />
+                <SkillsSection skill={'Javascript'} progress={'85%'} length={'85%'}/>
+                <SkillsSection skill={'Ruby'} progress={'60%'} length={'60%'}/>
+                <SkillsSection skill={'ReactJS'} progress={'75%'} length={'75%'} icon={faReact} />
+                <SkillsSection skill={'Github'} progress={'80%'} length={'80%'} icon={faGithub} />
+                <SkillsSection skill={'Bootstrap'} progress={'75%'} length={'75%'} icon={faBootstrap} />
+                <SkillsSection skill={'ThreeJS'} progress={'45%'} length={'45%'}/>
+                <SkillsSection skill={'Material UI'} progress={'75%'} length={'75%'}/>
+                <SkillsSection skill={'Vue.js'} progress={'70%'} length={'70%'} icon={faVuejs} />
+                <SkillsSection skill={'Python'} progress={'30%'} length={'30%'} icon={faPython} />
+                <SkillsSection skill={'CSS'} progress={'80%'} length={'80%'} icon={faCss3} />
+                <SkillsSection skill={'HTML'} progress={'90%'} length={'90%'} icon={faHtml5} />
+                <SkillsSection skill={'Sass'} progress={'90%'} length={'90%'} icon={faSass} />
+                <SkillsSection skill={'Object Oriented Programming'} progress={'60%'} length={'60%'} />
+                <SkillsSection skill={'Data Structures & Algorithms'} progress={'50%'} length={'50%'}/>
                 <SkillsSection skill={'SQLite'} progress={'40%'} length={'40%'} />
-                <SkillsSection skill={'Leadership'} progress={'100%'} length={'100%'} />
-                <SkillsSection skill={'CSS'} progress={'70%'} length={'70%'} />
-                <SkillsSection skill={'Bootstrap'} progress={'70%'} length={'70%'} />
-                <SkillsSection skill={'Material UI'} progress={'70%'} length={'70%'} />
-                <SkillsSection skill={'HTML'} progress={'90%'} length={'90%'} />
-                <SkillsSection skill={'Object Oriented Programming'} progress={'40%'} length={'40%'} />
-                <SkillsSection skill={'Data Structures & Algorithms'} progress={'20%'} length={'20%'} />
                 <SkillsSection skill={'Adobe Photoshop'} progress={'80%'} length={'80%'} />
                 <SkillsSection skill={'Adobe Premier Pro'} progress={'90%'} length={'90%'} />
+                <SkillsSection skill={'State Managment'} progress={'70%'} length={'70%'} />
                 <SkillsSection skill={'Willingness to Learn'} progress={'100%'} length={'100%'} />
                 <SkillsSection skill={'Coachable'} progress={'100%'} length={'100%'} />
+                <SkillsSection skill={'Leadership'} progress={'100%'} length={'100%'} />
             </div>
 
             <Title title={'Traits'} span={'Traits'} />
             <div className="servives-container">
             <hr/>
+                <ServicesSection image={rippleMatch} title={'Professional Experience'} text={'Associate Software Engineer at RippleMatch. During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. You can find more in my resume linked above.'} /> 
+                <hr/>
                 <ServicesSection image={webdesign} title={'Web Design'} alt="Ilolo studying at Flatiron School"
                 text={`In November of 2021 I took a leap of faith and enrolled Software Engineering Bootcamp—and I've yet to look back. Flatiron School is a Full-stack web development in Ruby on Rails, JavaScript (ES6), React, Redux, HTML5, CSS3, API Development, Authentication and Authorization, Object-Oriented Programming, SQL, Sinatra, ActiveRecord, JSON.`}
                 /> <hr/>

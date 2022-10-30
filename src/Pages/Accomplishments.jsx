@@ -7,7 +7,6 @@ import track from '../images/trackweb.png'
 import Ilolo_Izu_SEC from '../images/Ilolo_Izu_SEC_Runner.jpeg'
 import record from '../images/A_M_world_record_4x4.png'
 
-
 export default function Accomplishments() {
     const blog3 = "https://miro.medium.com/max/1400/1*J0WDV6ub4ZMzJxNESkjsrA.jpeg"
     const blog1 = "https://miro.medium.com/max/1400/1*__qZBavJIRiMQHJf6AlFig.png"

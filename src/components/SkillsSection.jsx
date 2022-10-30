@@ -1,10 +1,15 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function SkillsSection({skill, progress, length}) {
+function SkillsSection({skill, progress, length, icon}) {
     return (
         <div className="SkillsSection">
             <div className="skills-container">
-                <h5 className="skill-title">{skill}</h5>
+                <div className="skill-header">
+                    <h5 className="skill-title">{skill}</h5>
+                    { icon ? 
+                    <FontAwesomeIcon className="language-icon" icon={icon} /> : null }
+                </div>
                 <div className="skill-bar">
                     <p className="skill-text">{progress}</p>
                     <div className="skill-progress">

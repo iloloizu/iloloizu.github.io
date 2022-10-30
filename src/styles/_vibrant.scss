@@ -1,5 +1,5 @@
 .dark {
-  .sidebar {
+    .sidebar {
     color: white;
     width: 16%;
     height: 100vh;
@@ -18,6 +18,16 @@
     }
   }
   .nav-toggle {
+    transform: translateX(-100%);
+    transition: 0.3s;
+    width: 33%;
+    height: 100vh;
+    background-color: #c3c4c6;
+    background-image: url(../images/dots.svg);
+    position: fixed;
+    z-index: 12;
+    transform-origin: left;
+    overflow: hidden;
     @media screen and (max-width: 1000px) {
       transition: all 0.4s ease-in-out;
       transform: translateX(0);
@@ -52,4 +62,38 @@
       width: 100%;
     }
   }
+  .main-content-margin-left-adj{
+    color:white;
+    transition: 0.3s;
+    width: 100%;
+    background-color: #10121bf9;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #c3c4c6, #2e344e);
+    background-position: center;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    .content {
+      z-index: 11!important;
+      margin: 5rem 15rem;
+      @media screen and (max-width: 1100px) {
+        margin: 2rem 10rem;
+      }
+      @media screen and (max-width: 1400px) {
+        margin: 3rem 10rem;
+      }
+      @media screen and (max-width: 1400px) {
+        margin: 3rem 10rem;
+      }
+      @media screen and (max-width: 710px) {
+        margin: 2rem 3rem;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+
 }

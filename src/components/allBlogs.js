@@ -1,3 +1,10 @@
+import blog9 from "../images/blog9.jpg"
+import blog10 from "../images/blog10.jpg"
+import blog11 from "../images/blog11.gif"
+import blog12 from "../images/blog12.png"
+import blog13 from "../images/blog13.png"
+import blog14 from "../images/blog14.png"
+
 const blog1 = "https://miro.medium.com/max/1400/1*__qZBavJIRiMQHJf6AlFig.png"
 const blog2 = "https://miro.medium.com/max/1400/1*djXUTs-JWV3w2Gr0ZNJ2kQ.jpeg"
 const blog3 = "https://miro.medium.com/max/1400/1*J0WDV6ub4ZMzJxNESkjsrA.jpeg"
@@ -6,25 +13,50 @@ const blog5 = "https://miro.medium.com/max/1400/1*hPFJwDLsLng-AEFin8IAOg.jpeg"
 const blog6 = "https://miro.medium.com/max/1400/1*OVvPD2RDLdpaijieATc52w.jpeg"
 const blog7 = "https://miro.medium.com/max/1400/1*vgqmgxAUeiKbUFYmnrUpsw.jpeg"
 const blog8 = "https://miro.medium.com/max/700/1*RyftmgpGjH1yx45GtvTb_A.jpeg"
-const blog9 = "https://miro.medium.com/max/1400/1*k0wTPCyT-Oq2bT_2RX0C_Q.jpeg"
-const blog10 = "https://miro.medium.com/max/700/1*6JthQpQWGLj9POunHaJKWA.jpeg"
-const blog11 = "https://miro.medium.com/max/700/1*P7Q7N9g1NA5jYa31nM3tAw.gif"
+
 
 const blogs = [
     {
+        id: 14,
+        image: blog14,
+        title: 'Utilizing LinkedIn for the Early-Career Software Engineer',
+        link: 'https://ilolo.medium.com/utilizing-linkedin-for-the-early-career-software-engineer-95d4afffe14d',
+        date : '4',
+        month: 'May',
+        year: '2022'
+    },
+    {
+        id: 13,
+        image: blog13,
+        title: 'Getting Started With Three.js',
+        link: 'https://betterprogramming.pub/getting-started-with-three-js-7a9031379847',
+        date : '21',
+        month: 'Apr',
+        year: '2022'
+    },
+    {
+        id: 12,
+        image: blog12,
+        title: 'Phase 5: Space City Sneakers',
+        link: 'https://ilolo.medium.com/phase-5-space-city-sneakers-4aa0f0aeb599',
+        date : '12',
+        month: 'Apr',
+        year: '2022'
+    },
+    {
         id: 11,
         image: blog11,
-        title: "How to add a Dark Mode button with ReactJS",
-        link: 'https://medium.com/@ilolo/how-to-add-a-dark-mode-button-with-reactjs-ec03b4630cd1',
-        date : '30',
+        title: 'How to Add a Dark Mode Button With ReactS',
+        link: 'https://betterprogramming.pub/how-to-add-a-dark-mode-button-with-reactjs-ec03b4630cd1',
+        date : '17',
         month: 'Mar',
         year: '2022'
     },
     {
         id: 10,
         image: blog10,
-        title: "Phase 4: We’re So Close",
-        link: 'https://medium.com/@ilolo/phase-4-were-so-close-c81d88abe899',
+        title: 'Phase 4: We’re So Close',
+        link: 'https://ilolo.medium.com/phase-4-were-so-close-c81d88abe899',
         date : '17',
         month: 'Mar',
         year: '2022'
@@ -33,7 +65,7 @@ const blogs = [
         id: 9,
         image: blog9,
         title: 'Using Serializer With Your Ruby on Rails API',
-        link: 'https://ilolo.medium.com/using-serializer-with-your-ruby-on-rails-api-e76795f4b3ad',
+        link: 'https://betterprogramming.pub/using-serializer-with-your-ruby-on-rails-api-e76795f4b3ad',
         date : '11',
         month: 'Mar',
         year: '2022'

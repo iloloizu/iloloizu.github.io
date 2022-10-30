@@ -20,24 +20,23 @@ function ImageSelection() {
                     </div>
                     <div className="right-section">
                         <p> Justin Ilolo Izu</p>
-                        <p> 24</p>
-                        <p> English, Spanish (Limited Proficiency)</p>
+                        <p> 25</p>
+                        <p> English, Spanish (Limited Working Proficiency)</p>
                         <p> Houston, TX, USA</p>
                         <p> Yes </p>
                     </div>
                 </div>
                 <br/>
                 <p className="about-text">
-                My name is Ilolo Izu (e-lo-lo e-zu), known some places by my first name—Justin! I graduated with a Bachelor's degree focused in Allied Health with a Minor in Business Administration from Texas A&M University in December 2019. I am transitioning from the 4 years of experience in the Medical Field. I'm currently enrolled in the Software Engineering program at Flatiron School. So far in the program, I have created three web applications in Javascript, React, SQLite, and Ruby. Some examples are a health and wellness calendar/to-do list and a wishlist app. I have learned HTML, CSS, Javascript, React, SQL, and Ruby. In the coming weeks, I will learn Ruby on Rails, Sinatra, and more. 
-                I'm looking for Frontend Software Engineering roles primarily, and secondly for roles as a Full-Stack Software Engineer. I am very interested in being in an environment where I can grow, learning languages such as Python, Java, C#, C++, Vue.js, three.js, etc, or bettering my growing interest in UI/UX. 
+                My name is Ilolo Izu (e-lo-lo e-zu). I graduated with a Bachelor's degree focused in Allied Health with a Minor in Business Administration from Texas A&M University in December 2019. Later, I enrolled in the Software Engineering program at Flatiron School. 
+                Throughout the program, I created three web applications in Javascript, React, SQLite, and Ruby gaining technical experience. I'm very passionate for building web applications and learning new technologies. My most recent experience comes from working as an Associate Software Engineer at 
+            <a href='https://www.linkedin.com/feed/update/urn:li:activity:6937548719974219776/' target="_blank" rel="noreferrer"> RippleMatch</a>. I'm looking primarily for Frontend Software Engineering roles, and secondly for roles as a Full-Stack Software Engineer. I am very interested in being in an environment where I can grow, learning languages such as Python, Java, C#, C++, Vue.js, three.js, etc, or bettering my growing interest in UI/UX. 
                 </p> 
-                <br/> <a href='https://drive.google.com/file/d/1Z8io1tdhftmYpDX42G0n5mLIIRnn7RI_/view?usp=sharing' target="_blank">
+                <br/> <a href='https://drive.google.com/file/d/1_A8Hw4TRP2WjslKzHFItAY9KynUAgmLC/view?usp=sharing' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button></a>
-                <br/> <a href='https://drive.google.com/file/d/1tWSYy43N2EUX7X1xnhJlqB4IAgXemGS3/view?usp=sharing' target="_blank">
-                <button className="btn">Download Cover Letter</button></a>
                 <br/>
                 <br/>
-                <br/><br/>
+                <br/>
 
             </div>
         </div>

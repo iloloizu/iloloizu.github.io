@@ -13,8 +13,8 @@ function BlogsPage() {
                     allBlogs.map((blog)=>{
                         return <div className="blog" key={blog.id}>
                             <div className="blog-content">
-                                <a href={blog.link} className="blog-link">
-                                  <img src={blog.image} alt="blog-image"/>
+                                <a href={blog.link} className="blog-link" target="_blank" rel="noreferrer">
+                                  <img src={blog.image} alt="Ilolo Izu Blog"/>
                                     {blog.title} 
                                 </a> <br /> {blog.month} {blog.date}, {blog.year}
                             </div>

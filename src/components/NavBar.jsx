@@ -22,39 +22,44 @@ function NavBar() {
         <div className="profile">
             <img src={avatar} alt="Ilolo Izu"/><br/>
         </div>
-            <ul className='nav-items'>
+            <ol className='nav-items'>
                 <li className="nav-item">
-                    <NavLink to="/home" exact activeClassName="active">
+                    <NavLink to="/home" activeClassName="active">
                         Home
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" exact activeClassName="active">
+                    <NavLink to="/about" activeClassName="active">
                         About
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/awards" exact activeClassName="awards">
+                    <NavLink to="/experience" activeClassName="active">
+                        Experience
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/awards" activeClassName="awards">
                     Awards
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolios" exact activeClassName="active">
+                    <NavLink to="/portfolios" activeClassName="active">
                         Portfolio
                     </NavLink>
                 </li>    
                 <li className="nav-item">
-                    <NavLink to="/blogs" exact activeClassName="active">
+                    <NavLink to="/blogs" activeClassName="active">
                         Blogs
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" exact activeClassName="active">
+                    <NavLink to="/contact" activeClassName="active">
                         Contact
                     </NavLink>
                 </li>
 
-            </ul>
+            </ol>
             <footer className="footer">
             <button className="dark-mode-btn" onClick={myFunction}>{isClicked ? "☾" : "☼"}</button><br/>
                 <p>©2022 Ilolo Izu</p>

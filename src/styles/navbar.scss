@@ -8,9 +8,10 @@
     align-items: center;
 
     .profile {
-      margin-top: 50px;
       width: 100%;
       text-align: center;
+      margin-top: 4rem;
+
       img {
         width: 90%;
         border-radius: 100%;
@@ -76,7 +77,6 @@
   padding: 4px;
   color: white;
   margin-top: 5px;
-  margin-right: 20px;
   font-size: 30px;
   font-weight: bold;
   border: none;

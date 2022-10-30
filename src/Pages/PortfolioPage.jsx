@@ -23,13 +23,15 @@ function PortfoliosPage() {
     }
 
     return (
-        <div className="PortfolioPage">
-            <div className="title">
-                <Title title={'Projects'} span={'Projects'} />
-            </div>
-            <div className="portfolios-data">
-                <Categories filter={filter} categories={categories} />
-                <MenuItems menuItem={menuItems} />
+        <div className="portfolioPage">
+            <div className="portfolios-content">
+                <div className="title">
+                    <Title title={'Projects'} span={'Projects'} />
+                </div>
+                <div className="portfolios-data">
+                    <Categories filter={filter} categories={categories} />
+                    <MenuItems menuItem={menuItems} />
+                </div>
             </div>
         </div>
     )
