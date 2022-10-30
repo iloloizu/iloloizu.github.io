@@ -10,7 +10,7 @@ function ContactPage() {
     return (
         <div>
             <div className="title">
-                <Title title={'About Me'} span={'About Me'} />
+                <Title title={'Contact Me'} span={'Contact Me'} />
             </div>
             <div className="ContactPage">
                 {window.innerWidth > 490 ? 
@@ -20,7 +20,6 @@ function ContactPage() {
                 </div>
                 : "" }
                 <div className="contact-sect">
-                    <ContactItem className="contact" icon={phone}  href1={'tel:8176820158'} text={'(817) 682-0158'} title={'Cell Phone'}/>
                     <ContactItem className="contact" icon={email} href1={'mailto: iloloizu97@gmail.com'} text={'iloloizu97@gmail.com'} title={'Email'}/>
                     <ContactItem  className="contact" icon={location} text={'Sugar Land, TX,'} text2={'United States'} title={'Location'}/>
                 </div>
