@@ -27,7 +27,7 @@ const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/
                     </ul>
                 </div>
             </div>
-            <a href='https://drive.google.com/file/d/1_A8Hw4TRP2WjslKzHFItAY9KynUAgmLC/view?usp=sharing' target="_blank" rel="noreferrer">
+            <a href='https://drive.google.com/file/d/1sPMExewigaxEs4TsA_sUnFGfE_fTgfz5/view?usp=sharing' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button>
             </a>
         </div>

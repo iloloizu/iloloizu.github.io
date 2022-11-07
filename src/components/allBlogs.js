@@ -13,9 +13,20 @@ const blog5 = "https://miro.medium.com/max/1400/1*hPFJwDLsLng-AEFin8IAOg.jpeg"
 const blog6 = "https://miro.medium.com/max/1400/1*OVvPD2RDLdpaijieATc52w.jpeg"
 const blog7 = "https://miro.medium.com/max/1400/1*vgqmgxAUeiKbUFYmnrUpsw.jpeg"
 const blog8 = "https://miro.medium.com/max/700/1*RyftmgpGjH1yx45GtvTb_A.jpeg"
+const blog15 = "https://miro.medium.com/max/1400/1*I3w32_OQYW9hJRdyzGs0XA.jpeg"
 
 
 const blogs = [
+
+    {
+        id: 15,
+        image: blog15,
+        title: 'Clean Code 101: Properly Naming our Variables and Functions',
+        link: 'https://ilolo.medium.com/clean-code-101-properly-naming-our-variables-and-functions-8b3e4a22aeed',
+        date : '7',
+        month: 'Nov',
+        year: '2022'
+    },
     {
         id: 14,
         image: blog14,
