@@ -1,7 +1,7 @@
 import React from 'react'
 import avatar from '../images/about.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCalendar, faComputer } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faCalendar, faLaptop } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faTwitter, faMedium, faGithub, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 function LinkTree() {
@@ -28,7 +28,7 @@ function LinkTree() {
             </a>
 
             <a href='https://iloloizu.com/' target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faComputer} className="link-icon" target="_blank"/>
+              <FontAwesomeIcon icon={faLaptop} className="link-icon" target="_blank"/>
             </a>
           </div>
           <div className='linktree'>
@@ -36,7 +36,7 @@ function LinkTree() {
               <FontAwesomeIcon icon={faCalendar} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://iloloizu.com/' className='linktree-icon' target="_blank" rel="noreferrer">Software Engineering Portfolio
-              <FontAwesomeIcon icon={faComputer} className="homepage-icon" target="_blank"/>
+              <FontAwesomeIcon icon={faLaptop} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://www.linkedin.com/in/ilolo-izu/' className='linktree-icon' target="_blank" rel="noreferrer">LinkedIn 
               <FontAwesomeIcon icon={faLinkedin} className="homepage-icon" target="_blank"/>
