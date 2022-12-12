@@ -1,12 +1,13 @@
 import React from 'react'
 import ContactItem from '../components/ContactItem';
-import phone from '../images/phone.png';
 import email from '../images/mail.png';
 import location from '../images/google-maps.png';
 import Title from '../components/Title';
+import { NavLink } from 'react-router-dom';
+
+import { faEnvelope, faLocation, faUser } from '@fortawesome/free-solid-svg-icons'
 
 function ContactPage() {
-
     return (
         <div>
             <div className="title">
@@ -20,9 +21,14 @@ function ContactPage() {
                 </div>
                 : "" }
                 <div className="contact-sect">
-                    <ContactItem className="contact" icon={email} href1={'mailto: iloloizu97@gmail.com'} text={'iloloizu97@gmail.com'} title={'Email'}/>
-                    <ContactItem  className="contact" icon={location} text={'Sugar Land, TX,'} text2={'United States'} title={'Location'}/>
+                    <ContactItem className="contact" icon={faEnvelope} href1={'mailto: iloloizu97@gmail.com'} text={'iloloizu97@gmail.com'} title={'Email'}/>
+                    <ContactItem  className="contact" icon={faLocation} text={'Sugar Land, TX,'} text2={'United States'} title={'Location'}/>
+                    <NavLink to="/links">
+                        <ContactItem className="contact" icon={faUser} text={'Links to my Socials'}/>
+                    </NavLink>
                 </div>
+                <br/>
+                    
             </div>
         </div>
     )

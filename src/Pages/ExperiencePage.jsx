@@ -3,7 +3,7 @@ import ServicesSection from '../components/ServicesSection';
 import Title from '../components/Title';
 
 function ExperiencePage() {
-const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_2048_1536/0/1654040507406?e=1669852800&v=beta&t=oZstMr2vtBF9rqd5aarodciqZbkMBz1Szg_VlWn6-PA"
+const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_800/0/1654040507428?e=1673481600&v=beta&t=eXRivCNuC6a9VpjwF0gCJps4_MCI-INi_a_vs7BNHcE"
                 
   return (
     <>
@@ -12,8 +12,8 @@ const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/
         </div>
         <div className='experiencePage'>
             <ServicesSection image={rippleMatch} title={'RippleMatch - 2022'} text={`RippleMatch is the recruitment automation platform changing how Gen Z finds work. By replacing job boards with matching and automation, RippleMatch eliminates the most time-intensive parts of the recruitment process for both employers and job seekers. Leading employers such as Amazon, eBay, and Teach For America leverage RippleMatch to build diverse, high-performing teams and Gen Z job seekers across the country trust RippleMatch to launch and grow their careers.`} />
-            <div class="row">
-                <div class="col">
+            <div className="row">
+                <div className="col">
                     <ul>
                         <li className='li_included'>Worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy</li>
                         <li className='li_included'>Worked with key stakeholders and Senior Engineers in an Agile Environment: from story grooming sessions to a live demo presentation to the entire company</li>
@@ -27,7 +27,7 @@ const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/
                     </ul>
                 </div>
             </div>
-            <a href='https://drive.google.com/file/d/1sPMExewigaxEs4TsA_sUnFGfE_fTgfz5/view?usp=sharing' target="_blank" rel="noreferrer">
+            <a href='https://drive.google.com/file/d/1vtVyCX03uKJotsYUlZm9NGa2BbvQNBOp/view?usp=sharing' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button>
             </a>
         </div>

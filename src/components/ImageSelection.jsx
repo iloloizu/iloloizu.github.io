@@ -32,7 +32,7 @@ function ImageSelection() {
                 Throughout the program, I created three web applications in Javascript, React, SQLite, and Ruby gaining technical experience. I'm very passionate for building web applications and learning new technologies. My most recent experience comes from working as an Associate Software Engineer at 
             <a href='https://www.linkedin.com/feed/update/urn:li:activity:6937548719974219776/' target="_blank" rel="noreferrer"> RippleMatch</a>. I'm looking primarily for Frontend Software Engineering roles, and secondly for roles as a Full-Stack Software Engineer. I am very interested in being in an environment where I can grow, learning languages such as Python, Java, C#, C++, Vue.js, three.js, etc, or bettering my growing interest in UI/UX. 
                 </p> 
-                <br/> <a href='https://drive.google.com/file/d/1sPMExewigaxEs4TsA_sUnFGfE_fTgfz5/view?usp=sharing' target="_blank" rel="noreferrer">
+                <br/> <a href='https://drive.google.com/file/d/1vtVyCX03uKJotsYUlZm9NGa2BbvQNBOp/view?usp=sharing' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button></a>
                 <br/>
                 <br/>

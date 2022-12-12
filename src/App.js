@@ -13,6 +13,7 @@ import ExperiencePage from './Pages/ExperiencePage';
 
 import { useState } from 'react';
 import {Routes, Route} from 'react-router-dom'
+import LinkTree from './Pages/LinkTree';
 
 export default function App() {
   const [navToggle, setNavToggle] = useState(true);
@@ -49,6 +50,8 @@ export default function App() {
               <Route path="/contact" element={<ContactPage/>}>
               </Route>
               <Route path="/awards" element={<Accomplishments/>}>
+              </Route>
+              <Route path="/links" element={<LinkTree/>}>
               </Route>
               
           </Routes>

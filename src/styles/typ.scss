@@ -17,6 +17,11 @@
     }
 }
 
+.link-header{
+  color: white;
+  text-align: center;
+}
+
 .hero-text span {
   color: #037fff;
 }
@@ -54,8 +59,54 @@
     height: 80%;
     margin: 0 5rem;
   }
+}
+
+.linktree{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  :hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+  }
+}
+
+.linktree-icon {
+  border: #fff solid 2px;
+  border-radius: 2em;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  .linktree-icon {
+      color: black;
+      border: 0px;
+    }  
+}
+
+//icons under profile picture
+.link-icon {
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.link-icon:hover{
+    color: rgb(211, 211, 211);
+    transition: 0.3s;
   }
 
+.link-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 .icon {
   margin: 0 1rem;
@@ -107,6 +158,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem;
+  padding: 1rem;
   text-align: center;
+}
+
+//linktree profile picture
+.link-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    img {
+        border-radius: 100%;
+        border: 2px solid white;
+        margin: auto;
+        width: 30%;
+      }
 }

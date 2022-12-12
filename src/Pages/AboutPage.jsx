@@ -12,7 +12,7 @@ import { faReact, faPython, faVuejs, faHtml5, faCss3, faSass, faGithub, faBootst
 
 export default function AboutPage() {
 
-  const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_2048_1536/0/1654040507406?e=1669852800&v=beta&t=oZstMr2vtBF9rqd5aarodciqZbkMBz1Szg_VlWn6-PA"
+  const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_800/0/1654040507428?e=1673481600&v=beta&t=eXRivCNuC6a9VpjwF0gCJps4_MCI-INi_a_vs7BNHcE"
 
   return (
     <div>
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 <SkillsSection skill={'Bootstrap'} progress={'75%'} length={'75%'} icon={faBootstrap} />
                 <SkillsSection skill={'ThreeJS'} progress={'45%'} length={'45%'}/>
                 <SkillsSection skill={'Material UI'} progress={'75%'} length={'75%'}/>
-                <SkillsSection skill={'Vue.js'} progress={'70%'} length={'70%'} icon={faVuejs} />
+                <SkillsSection skill={'Vue.js'} progress={'75%'} length={'75%'} icon={faVuejs} />
                 <SkillsSection skill={'Python'} progress={'30%'} length={'30%'} icon={faPython} />
                 <SkillsSection skill={'CSS'} progress={'80%'} length={'80%'} icon={faCss3} />
                 <SkillsSection skill={'HTML'} progress={'90%'} length={'90%'} icon={faHtml5} />

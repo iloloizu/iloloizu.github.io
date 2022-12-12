@@ -24,41 +24,41 @@ function NavBar() {
         </div>
             <ol className='nav-items'>
                 <li className="nav-item">
-                    <NavLink to="/home" activeClassName="active">
+                    <NavLink to="/home">
                         Home
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active">
+                    <NavLink to="/about">
                         About
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/experience" activeClassName="active">
+                    <NavLink to="/experience">
                         Experience
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/awards" activeClassName="awards">
+                    <NavLink to="/awards">
                     Awards
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolios" activeClassName="active">
+                    <NavLink to="/portfolios">
                         Portfolio
                     </NavLink>
                 </li>    
                 <li className="nav-item">
-                    <NavLink to="/blogs" activeClassName="active">
+                    <NavLink to="/blogs">
                         Blogs
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active">
+                    <NavLink to="/contact">
                         Contact
                     </NavLink>
                 </li>
-
+                
             </ol>
             <footer className="footer">
             <button className="dark-mode-btn" onClick={myFunction}>{isClicked ? "☾" : "☼"}</button><br/>
