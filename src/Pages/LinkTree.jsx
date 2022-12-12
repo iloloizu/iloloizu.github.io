@@ -7,7 +7,7 @@ import { faLinkedin, faTwitter, faMedium, faGithub, faInstagram, faYoutube } fro
 function LinkTree() {
   return (
     <div className="HomePage"> 
-        <div className="hero">
+        <div className="LinkTree">
            <div className="link-image">
             <img src={avatar} alt="Ilolo Izu"/>
            </div>
@@ -35,20 +35,20 @@ function LinkTree() {
             <a href='https://calendly.com/ilolo' className='linktree-icon' target="_blank" rel="noreferrer">Let's Connect 
               <FontAwesomeIcon icon={faCalendar} className="homepage-icon" target="_blank"/>
             </a>
-            <a href='https://iloloizu.com/' className='linktree-icon' target="_blank" rel="noreferrer">Software Engineering Portfolio
+            <a href='https://iloloizu.com/' className='linktree-icon' target="_blank" rel="noreferrer">Software Developer Portfolio
               <FontAwesomeIcon icon={faLaptop} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://www.linkedin.com/in/ilolo-izu/' className='linktree-icon' target="_blank" rel="noreferrer">LinkedIn 
               <FontAwesomeIcon icon={faLinkedin} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://twitter.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Twitter
-              <FontAwesomeIcon icon={faTwitter} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://ilolo.medium.com/' className='linktree-icon' target="_blank" rel="noreferrer">Medium Blog
               <FontAwesomeIcon icon={faMedium} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://github.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Github
               <FontAwesomeIcon icon={faGithub} className="homepage-icon" target="_blank"/>
+            </a>
+            <a href='https://twitter.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Twitter
+              <FontAwesomeIcon icon={faTwitter} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://instagram.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Instagram
               <FontAwesomeIcon icon={faInstagram} className="homepage-icon" target="_blank"/>

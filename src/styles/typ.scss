@@ -167,9 +167,14 @@
   align-items: center;
     img {
         border-radius: 100%;
-        border: 2px solid white;
         margin: auto;
         width: 30%;
       }
 }
 
+.LinkTree {
+  margin: 10%;
+  @media screen and (max-width: 620px) {
+    margin: none;
+  }
+}
