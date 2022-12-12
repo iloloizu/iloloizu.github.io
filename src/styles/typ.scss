@@ -74,6 +74,9 @@
     background-color: white;
     color: black;
     transition: 0.3s;
+    .homepage-icon{
+      color: black;
+    }
   }
 }
 
@@ -83,10 +86,6 @@
   padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  .linktree-icon {
-      color: black;
-      border: 0px;
-    }  
 }
 
 //icons under profile picture
@@ -175,3 +174,4 @@
         width: 30%;
       }
 }
+
