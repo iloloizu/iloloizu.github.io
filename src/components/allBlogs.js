@@ -15,10 +15,19 @@ const blog7 = "https://miro.medium.com/max/1400/1*vgqmgxAUeiKbUFYmnrUpsw.jpeg"
 const blog8 = "https://miro.medium.com/max/700/1*RyftmgpGjH1yx45GtvTb_A.jpeg"
 const blog15 = "https://miro.medium.com/max/1400/1*I3w32_OQYW9hJRdyzGs0XA.jpeg"
 const blog16 = "https://miro.medium.com/max/720/1*v5c_ajXuXsTKQgQyIfvqog.jpeg"
-
+const blog17 = "https://miro.medium.com/max/1400/1*GBb3Reg5n4RxgH-3Q-mmZg.webp"
 
 const blogs = [
+    {
+        id: 17,
+        image: blog17,
+        title: 'Clean Code 101: Functions',
+        link: 'https://ilolo.medium.com/clean-code-101-functions-304262531d8a',
+        date : '9',
+        month: 'Dec',
+        year: '2022'
 
+    },
     {
         id: 16,
         image: blog16,
