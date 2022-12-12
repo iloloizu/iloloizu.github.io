@@ -35,7 +35,7 @@ function LinkTree() {
             <a href='https://calendly.com/ilolo' className='linktree-icon' target="_blank" rel="noreferrer">Let's Connect 
               <FontAwesomeIcon icon={faCalendar} className="homepage-icon" target="_blank"/>
             </a>
-            <a href='https://iloloizu.com/' className='linktree-icon' target="_blank" rel="noreferrer">Software Developer Portfolio
+            <a href='https://iloloizu.com/' className='linktree-icon' target="_blank" rel="noreferrer">Developer Portfolio
               <FontAwesomeIcon icon={faLaptop} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://www.linkedin.com/in/ilolo-izu/' className='linktree-icon' target="_blank" rel="noreferrer">LinkedIn 
