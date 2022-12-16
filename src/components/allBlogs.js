@@ -16,8 +16,19 @@ const blog8 = "https://miro.medium.com/max/700/1*RyftmgpGjH1yx45GtvTb_A.jpeg"
 const blog15 = "https://miro.medium.com/max/1400/1*I3w32_OQYW9hJRdyzGs0XA.jpeg"
 const blog16 = "https://miro.medium.com/max/720/1*v5c_ajXuXsTKQgQyIfvqog.jpeg"
 const blog17 = "https://miro.medium.com/max/1400/1*GBb3Reg5n4RxgH-3Q-mmZg.webp"
+const blog18 = "https://miro.medium.com/max/1400/1*z_YMJAipDLqen7TTQSEBsA.webp"
 
 const blogs = [
+    {
+        id: 18,
+        image: blog18,
+        title: 'React.js Hook Study Guide',
+        link: 'https://ilolo.medium.com/react-js-hook-study-guide-8386ad23f97b',
+        date : '16',
+        month: 'Dec',
+        year: '2022'
+
+    },
     {
         id: 17,
         image: blog17,
