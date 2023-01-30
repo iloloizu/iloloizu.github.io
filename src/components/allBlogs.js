@@ -18,8 +18,19 @@ const blog16 = "https://miro.medium.com/max/720/1*v5c_ajXuXsTKQgQyIfvqog.jpeg"
 const blog17 = "https://miro.medium.com/max/1400/1*GBb3Reg5n4RxgH-3Q-mmZg.webp"
 const blog18 = "https://miro.medium.com/max/1400/1*z_YMJAipDLqen7TTQSEBsA.webp"
 const blog19 = "https://miro.medium.com/max/1400/1*nCcZ1AGdnKHX2RK0W3EgRQ.webp"
+const blog20 = "https://miro.medium.com/max/1356/0*kxPYwfJmkXZ3iCWy.webp"
 
 const blogs = [
+    {
+        id: 20,
+        image: blog20,
+        title: 'Understanding the MERN Stack for Full-Stack Development',
+        link: 'https://ilolo.medium.com/understanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb',
+        date : '30',
+        month: 'Jan',
+        year: '2023'
+
+    },
     {
         id: 19,
         image: blog19,
