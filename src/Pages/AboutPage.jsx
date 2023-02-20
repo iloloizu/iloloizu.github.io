@@ -47,7 +47,8 @@ export default function AboutPage() {
             <Title title={'Traits'} span={'Traits'} />
             <div className="servives-container">
             <hr/>
-                <ServicesSection image={rippleMatch} title={'Professional Experience'} text={'Associate Software Engineer at RippleMatch. During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. You can find more in my resume linked above.'} /> 
+                <ServicesSection image={rippleMatch} title={'Professional Experience'} text={`Associate Software Engineer at RippleMatch. During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. 
+                I also have experience working as a Software Engineer I at Resilia. You can find more in my resume linked above. `} /> 
                 <hr/>
                 <ServicesSection image={webdesign} title={'Web Design'} alt="Ilolo studying at Flatiron School"
                 text={`In November of 2021 I took a leap of faith and enrolled Software Engineering Bootcamp—and I've yet to look back. Flatiron School is a Full-stack web development in Ruby on Rails, JavaScript (ES6), React, Redux, HTML5, CSS3, API Development, Authentication and Authorization, Object-Oriented Programming, SQL, Sinatra, ActiveRecord, JSON.`}
