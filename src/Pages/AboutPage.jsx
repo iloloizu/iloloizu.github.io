@@ -12,7 +12,7 @@ import { faReact, faPython, faVuejs, faHtml5, faCss3, faSass, faGithub, faBootst
 
 export default function AboutPage() {
 
-  const rippleMatch = "https://media-exp1.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_800/0/1654040507428?e=1673481600&v=beta&t=eXRivCNuC6a9VpjwF0gCJps4_MCI-INi_a_vs7BNHcE"
+  const rippleMatch = "https://media.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_800/0/1654040507428?e=1679529600&v=beta&t=-N2OrE4iceU2l3qdYL6acKbZ03Iex27_Bx9Fukc5T3U"
 
   return (
     <div>

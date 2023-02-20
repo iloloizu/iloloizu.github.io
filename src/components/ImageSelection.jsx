@@ -28,16 +28,17 @@ function ImageSelection() {
                 </div>
                 <br/>
                 <p className="about-text">
-                My name is Ilolo Izu (e-lo-lo e-zu). I graduated with a Bachelor's degree focused in Allied Health with a Minor in Business Administration from Texas A&M University in December 2019. Later, I enrolled in the Software Engineering program at Flatiron School. 
-                Throughout the program, I created three web applications in Javascript, React, SQLite, and Ruby gaining technical experience. I'm very passionate for building web applications and learning new technologies. My most recent experience comes from working as an Associate Software Engineer at 
-            <a href='https://www.linkedin.com/feed/update/urn:li:activity:6937548719974219776/' target="_blank" rel="noreferrer"> RippleMatch</a>. I'm looking primarily for Frontend Software Engineering roles, and secondly for roles as a Full-Stack Software Engineer. I am very interested in being in an environment where I can grow, learning languages such as Python, Java, C#, C++, Vue.js, three.js, etc, or bettering my growing interest in UI/UX. 
+After graduating from Texas A&M in 2019 with a degree in Allied Health and a minor in Business Administration, I initially pursued a medical degree as a Physician Associate, but ultimately realized my true calling was in the exciting world of tech.
+
+During my time at university, I not only excelled in my studies, but I also left my mark on the world of athletics as a Track and Field All-American. Additionally, I made sure to give back to my community through various volunteer organizations.
+
+When I'm not working hard to perfect my programming skills, you can find me indulging in my other creative passions such as photography, traveling, playing video games, or sampling new and exciting culinary experiences. In short, I am a person who never stops exploring and is always on the lookout for my next big adventure.
                 </p> 
                 <br/> <a href='https://drive.google.com/file/d/1vtVyCX03uKJotsYUlZm9NGa2BbvQNBOp/view?usp=sharing' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button></a>
                 <br/>
                 <br/>
                 <br/>
-
             </div>
         </div>
     )
