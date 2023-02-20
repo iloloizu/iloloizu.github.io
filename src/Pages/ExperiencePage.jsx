@@ -16,7 +16,8 @@ const resilia = "http://static1.squarespace.com/static/5e45fd7b05ae4e3f2f2ed60f/
             <div className="row">
                 <div className="col">
                     <ul>
-                        <li className='li_included'>Worked as a Full-Stack Software Engineer I Typescript node GraphQL APIs, Typescript ReactJS single-page web apps, Material UI design components, cloud-based platforms (Stripe, Auth0, Mailgun, Contentful, etc.), Heroku infrastructure, AWS infrastructure</li>
+                        <li className='li_included'>Worked as a Full-Stack Software Engineer I with: Typescript, node, GraphQL APIs, ReactJS, Material UI design
+components, cloud-based platforms (Stripe, Auth0, Mailgun, Contentful, etc.), Heroku infrastructure, AWS infrastructure</li>
                         <li className='li_included'>Software development experience with proficiency in frontend and backend frameworks/languages, testing practices and frameworks, API design and implementation, and database design and migrations
                             Collaborated with Product and Design teams to understand and solve core problems faced by nonprofit users</li>
                         <li className='li_included'>Built end-to-end technology solutions with hands-on experience in UX, API, and DB layers</li>
