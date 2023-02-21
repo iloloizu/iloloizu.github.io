@@ -11,8 +11,10 @@ export default function HomePage() {
             Hi, I'm <span>Ilolo Izu</span>, Software Engineer
           </h1>
           <p className='h-sub-text'>
-          Houston, TX native, Ilolo, is a passionate software engineer with a keen eye for beautiful user interfaces and an insatiable hunger for personal growth. Having graduated from Texas A&M in 2019, Ilolo originally set out on a path towards a medical degree, but soon realized that his true calling lay in the exciting and ever-evolving world of tech. 
-          He currently works as a Software Engineer at 
+          Welcome to my website, here you can join the journey and follow me on my path to success in the field of web development.
+          My name is Ilolo Izu (e-lo-lo e-zu), known some places by my first name—Justin! I'm a Texas A&M University & Flatiron 
+          School Alumnus. I'm a developer with a passion for building beautiful user interfaces and an insatiable hunger for personal growth.
+          I currently work as a Software Engineer at 
             <a href='https://www.linkedin.com/feed/update/urn:li:activity:7031000808267669505/' target="_blank" rel="noreferrer"> Resilia</a>.
           </p>
           <div className='icons'>
