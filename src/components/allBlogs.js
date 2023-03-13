@@ -19,8 +19,19 @@ const blog17 = "https://miro.medium.com/max/1400/1*GBb3Reg5n4RxgH-3Q-mmZg.webp"
 const blog18 = "https://miro.medium.com/max/1400/1*z_YMJAipDLqen7TTQSEBsA.webp"
 const blog19 = "https://miro.medium.com/max/1400/1*nCcZ1AGdnKHX2RK0W3EgRQ.webp"
 const blog20 = "https://miro.medium.com/max/1356/0*kxPYwfJmkXZ3iCWy.webp"
+const blog21 = "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*29tgDjLfcEIXjrhW.png"
 
 const blogs = [
+    {
+        id: 21,
+        image: blog21,
+        title: 'Demystifying GraphQL: A Quick Introduction to GraphQL for Modern Web Development',
+        link: 'https://ilolo.medium.com/demystifying-graphql-a-quick-introduction-to-graphql-for-modern-web-development-3b1a806ff19f',
+        date : '13',
+        month: 'Mar',
+        year: '2023'
+
+    },
     {
         id: 20,
         image: blog20,
