@@ -7,12 +7,13 @@ import leadership from '../images/Leadershipweb.png'
 import photography from '../images/Photography.jpg'
 import webdesign from '../images/WebDesign.JPG'
 import track from '../images/trackweb.png'
+import Resilia from '../images/Resilia.JPG'
 
 import { faReact, faPython, faVuejs, faHtml5, faCss3, faSass, faGithub, faBootstrap } from '@fortawesome/free-brands-svg-icons'
 
 export default function AboutPage() {
 
-  const rippleMatch = "https://media.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_800/0/1654040507428?e=1679529600&v=beta&t=-N2OrE4iceU2l3qdYL6acKbZ03Iex27_Bx9Fukc5T3U"
+  const resilia = Resilia
 
   return (
     <div>
@@ -47,7 +48,7 @@ export default function AboutPage() {
             <Title title={'Traits'} span={'Traits'} />
             <div className="servives-container">
             <hr/>
-                <ServicesSection image={rippleMatch} title={'Professional Experience'} text={`Associate Software Engineer at RippleMatch. During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. 
+                <ServicesSection image={resilia} title={'Professional Experience'} text={`Associate Software Engineer at RippleMatch. During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. 
                 I also have experience working as a Software Engineer I at Resilia. You can find more in my resume linked above. `} /> 
                 <hr/>
                 <ServicesSection image={webdesign} title={'Web Design'} alt="Ilolo studying at Flatiron School"

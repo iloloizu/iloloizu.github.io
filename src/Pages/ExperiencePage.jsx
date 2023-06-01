@@ -1,10 +1,12 @@
 import React from 'react'
 import ServicesSection from '../components/ServicesSection';
 import Title from '../components/Title';
+import Resilia from '../images/Resilia.JPG'
+import Ripple from '../images/Ripple.JPG'
 
 function ExperiencePage() {
-const rippleMatch = "https://media.licdn.com/dms/image/C5622AQH-i00mEmGFjw/feedshare-shrink_800/0/1654040507428?e=1679529600&v=beta&t=-N2OrE4iceU2l3qdYL6acKbZ03Iex27_Bx9Fukc5T3U"
-const resilia = "http://static1.squarespace.com/static/5e45fd7b05ae4e3f2f2ed60f/t/615e5e4a8904346556cddc9b/1595345941717/Resilia_Final_Social_FullColor.png?format=1500w"
+const rippleMatch = Ripple
+const resilia = Resilia
                 
   return (
     <>
