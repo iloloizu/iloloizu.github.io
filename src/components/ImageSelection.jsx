@@ -20,9 +20,9 @@ function ImageSelection() {
                     </div>
                     <div className="right-section">
                         <p> Justin Ilolo Izu</p>
-                        <p> 25</p>
+                        <p> 26</p>
                         <p> English, Spanish (Limited Working Proficiency)</p>
-                        <p> Houston, TX, USA</p>
+                        <p> Denver, CO, USA</p>
                         <p> Yes </p>
                     </div>
                 </div>
