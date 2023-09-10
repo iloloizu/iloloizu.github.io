@@ -46,7 +46,7 @@ components, cloud-based platforms (Stripe, Auth0, Mailgun, Contentful, etc.), He
                     </ul>
                 </div>
             </div>
-            <a href='https://drive.google.com/file/d/1cSf466GSGQpSV9Q1QWTywG468AIZXQlg/view' target="_blank" rel="noreferrer">
+            <a href='https://docs.google.com/document/d/e/2PACX-1vTnsf4wQoeqMcIfnvVnzZQIkxxZbiSJVzv4GIdxkvCh-rElw2RmfXlOwDZLIJ1z68S7EXGHhW5iAjJz/pub' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button>
             </a>
         </div>
