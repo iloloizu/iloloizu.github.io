@@ -3,6 +3,7 @@ import ServicesSection from '../components/ServicesSection';
 import Title from '../components/Title';
 import Resilia from '../images/Resilia.JPG'
 import Ripple from '../images/Ripple.JPG'
+import Vanguard from '../images/vanguard_logo.jpeg'
 
 function ExperiencePage() {
 const rippleMatch = Ripple
@@ -14,6 +15,16 @@ const resilia = Resilia
             <Title title={'Professional Experience'} span={'Professional'} />
         </div>
         <div className='experiencePage'>
+            <ServicesSection image={Vanguard} title={'Vanguard- 2023'} text={`Vanguard is one of the world's largest investment companies, offering a large selection of low-cost mutual funds, ETFs, advice, and related services.`} />
+            <div className="row">
+                <div className="col">
+                    <ul>
+                        <li className='li_included'>Application Developer I with a focus on Front-End Development</li>
+                        <li className='li_included'>Leveraging AngularJS, Node.js, and TypeScript to build for Vanguard's Personal Investor Technology.</li>
+                    </ul>
+                </div>
+            </div>
+
             <ServicesSection image={resilia} title={'Resilia - 2023'} text={`Resilia is a technology platform with a human touch. Resilia enables nonprofits to increase capacity and funders to go beyond the grant with technical assistance, coaching, and capacity-building support.`} />
             <div className="row">
                 <div className="col">

@@ -20,8 +20,8 @@ export default function AboutPage() {
       <Title title={'About Me'} span={'About Me'}/>
       
       <ImageSelection />
-            <Title title={'My Skills'} span={'My Skills'} />
-            <div className="skillsContainer">
+            {/* <Title title={'My Skills'} span={'My Skills'} /> */}
+            {/* <div className="skillsContainer">
                 <SkillsSection skill={'Javascript'} progress={'85%'} length={'85%'}/>
                 <SkillsSection skill={'Ruby'} progress={'60%'} length={'60%'}/>
                 <SkillsSection skill={'ReactJS'} progress={'75%'} length={'75%'} icon={faReact} />
@@ -43,12 +43,12 @@ export default function AboutPage() {
                 <SkillsSection skill={'Willingness to Learn'} progress={'100%'} length={'100%'} />
                 <SkillsSection skill={'Coachable'} progress={'100%'} length={'100%'} />
                 <SkillsSection skill={'Leadership'} progress={'100%'} length={'100%'} />
-            </div>
+            </div> */}
 
             <Title title={'Traits'} span={'Traits'} />
             <div className="servives-container">
             <hr/>
-                <ServicesSection image={resilia} title={'Professional Experience'} text={`Associate Software Engineer at RippleMatch. During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. 
+                <ServicesSection image={resilia} title={'Professional Experience'} text={`During my time at RippleMatch, I worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy. I worked with key stake holders and Senior Engineers in an Agile Environment to build scalable features from concept to implementation. I also gave a live demo presentation to the entire company. 
                 I also have experience working as a Software Engineer I at Resilia. You can find more in my resume linked above. `} /> 
                 <hr/>
                 <ServicesSection image={webdesign} title={'Web Design'} alt="Ilolo studying at Flatiron School"

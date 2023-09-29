@@ -13,17 +13,13 @@ function ImageSelection() {
                 <div className="about-details">
                     <div className="left-section">
                         <p>Full Name:</p>
-                        <p>Age:</p>
                         <p>Languages:</p>
                         <p>Location:</p>
-                        <p>Open to Relocate:</p>
                     </div>
                     <div className="right-section">
                         <p> Justin Ilolo Izu</p>
-                        <p> 26</p>
                         <p> English, Spanish (Limited Working Proficiency)</p>
-                        <p> Denver, CO, USA</p>
-                        <p> Yes </p>
+                        <p> Philadelphia, PA, USA</p>
                     </div>
                 </div>
                 <br/>

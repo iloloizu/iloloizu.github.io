@@ -10,6 +10,7 @@ import ContactPage from './Pages/ContactPage';
 import '../src/styles/_vibrant.scss'
 import Accomplishments from './Pages/Accomplishments';
 import ExperiencePage from './Pages/ExperiencePage';
+import Socials from './Pages/Socials';
 
 import { useState } from 'react';
 import {Routes, Route} from 'react-router-dom'
@@ -52,6 +53,8 @@ export default function App() {
               <Route path="/awards" element={<Accomplishments/>}>
               </Route>
               <Route path="/links" element={<LinkTree/>}>
+              </Route>
+              <Route path="/socials" element={<Socials/>}>
               </Route>
               
           </Routes>
