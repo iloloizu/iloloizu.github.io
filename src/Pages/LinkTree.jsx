@@ -2,7 +2,7 @@ import React from 'react'
 import avatar from '../images/about.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCalendar, faLaptop } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faTwitter, faMedium, faGithub, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faMedium, faGithub, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 function LinkTree() {
   return (
@@ -46,9 +46,6 @@ function LinkTree() {
             </a>
             <a href='https://github.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Github
               <FontAwesomeIcon icon={faGithub} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://twitter.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Twitter
-              <FontAwesomeIcon icon={faTwitter} className="homepage-icon" target="_blank"/>
             </a>
             <a href='https://instagram.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Instagram
               <FontAwesomeIcon icon={faInstagram} className="homepage-icon" target="_blank"/>

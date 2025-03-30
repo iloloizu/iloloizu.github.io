@@ -19,7 +19,7 @@ const resilia = Resilia
             <div className="row">
                 <div className="col">
                     <ul>
-                        <li className='li_included'>Application Engineer working in Angular JS, Fastify, RxJS, and NgRx. Building Angular web applications and Restful micro-services hosted on the AWS cloud.</li>
+                        <li className='li_included'>Application Engineer II working in Angular JS, Fastify, RxJS, and NgRx. Building Angular web applications and Restful micro-services hosted on the AWS cloud.</li>
                         <li className='li_included'>Modernized the Buy/Sell Landing Page, enhancing user navigation and transaction efficiency.</li>
                         <li className='li_included'>Implemented Automated Investing Plans, optimizing user investment processes and streamlining client interactions.</li>
                         <li className='li_included'>Contributed to the development of the New Investor IRA Experience, which drove $250M in investments and resulted in a 4% increase in overall investment rates and a 22% adoption rate of Target Retirement Funds (TRFs) by new clients.</li>
@@ -64,7 +64,7 @@ components, cloud-based platforms (Stripe, Auth0, Mailgun, Contentful, etc.), He
                     </ul>
                 </div>
             </div>
-            <a href='https://drive.google.com/file/d/1Y7BxCrw6FkFd4xf-Fd7_gX9bH0dTtiY9/view' target="_blank" rel="noreferrer">
+            <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer">
                 <button className="btn">Download Résumé</button>
             </a>
         </div>

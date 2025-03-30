@@ -62,7 +62,7 @@ function NavBar() {
             </ol>
             <footer className="footer">
             <button className="dark-mode-btn" onClick={myFunction}>{isClicked ? "☾" : "☼"}</button><br/>
-                <p>©2022 Ilolo Izu</p>
+                <p>©2025 Ilolo Izu</p>
             </footer>
         </nav>
     </div>

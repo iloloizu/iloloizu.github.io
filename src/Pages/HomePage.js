@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/typ.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function HomePage() {
   return (
@@ -18,9 +18,6 @@ export default function HomePage() {
           <div className='icons'>
             <a href='https://www.linkedin.com/in/ilolo-izu/' className='icon' target="_blank" rel="noreferrer">LinkedIn 
               <FontAwesomeIcon icon={faLinkedin} className="homepage-icon"/>
-            </a>
-            <a href='https://twitter.com/iloloizu' className='icon' target="_blank" rel="noreferrer">Twitter
-              <FontAwesomeIcon icon={faTwitter} className="homepage-icon"/>
             </a>
             <a href='https://ilolo.medium.com/' className='icon' target="_blank" rel="noreferrer">Blog
               <FontAwesomeIcon icon={faMedium}  className="homepage-icon" target="_blank"/>
