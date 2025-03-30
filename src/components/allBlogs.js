@@ -21,8 +21,19 @@ const blog19 = "https://miro.medium.com/max/1400/1*nCcZ1AGdnKHX2RK0W3EgRQ.webp"
 const blog20 = "https://miro.medium.com/max/1356/0*kxPYwfJmkXZ3iCWy.webp"
 const blog21 = "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*29tgDjLfcEIXjrhW.png"
 const blog22 = "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VehSGnVPsaxpqBfzA3hu7A.png"
+const blog23 = "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0kcdhc0NL-rIZ1JMLsGLig.jpeg"
 
 const blogs = [
+    {
+        id: 23,
+        image: blog23,
+        title: 'Mastering Angular Change Detection: Performance, Strategies, and Best Practices',
+        link: 'https://medium.com/@ilolo/rethinking-reactivity-in-angular-a-deep-dive-into-angular-signals-ed2eeac7655b',
+        date : '30',
+        month: 'Mar',
+        year: '2025'
+
+    },
     {
         id: 22,
         image: blog22,
