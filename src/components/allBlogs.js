@@ -28,7 +28,7 @@ const blogs = [
         id: 23,
         image: blog23,
         title: 'Mastering Angular Change Detection: Performance, Strategies, and Best Practices',
-        link: 'https://medium.com/@ilolo/rethinking-reactivity-in-angular-a-deep-dive-into-angular-signals-ed2eeac7655b',
+        link: 'https://ilolo.medium.com/mastering-angular-change-detection-performance-strategies-and-best-practices-381cf15c0182',
         date : '30',
         month: 'Mar',
         year: '2025'
