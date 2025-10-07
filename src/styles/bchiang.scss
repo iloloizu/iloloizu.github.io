@@ -62,3 +62,13 @@ body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-seri
 .section .HomePage, .section .contact, .section .BlogsPage, .section .PortfolioPage { background: transparent; box-shadow: none; }
 
 
+/* Legacy component overrides to remove borders/animations */
+.title, .experience_page_title { display: none; }
+.servives-container hr, .experiencePage hr { display: none; }
+.servives-container, .experiencePage, .portfolioPage, .BlogsPage, .contact { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+*[class*="animate"], *[style*="animation"], *[style*="transition"] { animation: none !important; transition: none !important; }
+.portfolios-data { display: grid; gap: 16px; }
+.portfolios-data > * { border: 1px solid rgba(100,255,218,0.12); border-radius: 12px; padding: 16px; background: rgba(2,12,27,0.55); }
+.contact .contact-section { background: rgba(2,12,27,0.55); border: 1px solid rgba(100,255,218,0.12); border-radius: 12px; padding: 24px; }
+
+
