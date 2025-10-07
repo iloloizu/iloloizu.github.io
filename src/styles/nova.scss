@@ -1,4 +1,4 @@
-/* Minimal layout styles inspired by brittanychiang.com */
+/* Minimal layout styles for the Nova theme */
 
 :root {
   --bg: #0a192f;
@@ -30,7 +30,7 @@ body { font-family: Inter, InterVariable, system-ui, -apple-system, Segoe UI, Ro
 .nova-bg::before { content: ""; position: fixed; inset: 0; z-index: -2; background: radial-gradient(60% 80% at 20% 10%, rgba(100,255,218,0.12), transparent 60%), radial-gradient(50% 60% at 80% 20%, rgba(100,255,218,0.08), transparent 70%); }
 .nova-bg::after { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background-image: url('../images/Gradient-Blur-2.jpg'); background-size: cover; background-position: center; opacity: 0.24; mix-blend-mode: screen; }
 
-/* Rubberhose-inspired film grain and soft edges */
+/* Film grain and soft edges */
 .rubbergrain::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0.04"/></feComponentTransfer></filter><rect width="100%" height="100%" filter="url(%23n)"/></svg>'); opacity: 0.35; z-index: -1; }
 .soft-card { background: rgba(2,12,27,0.55); border: 1px solid rgba(100,255,218,0.12); box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7); border-radius: 14px; }
 
@@ -71,7 +71,6 @@ body { font-family: Inter, InterVariable, system-ui, -apple-system, Segoe UI, Ro
 
 /* Make embedded legacy pages blend in */
 .section .HomePage, .section .contact, .section .BlogsPage, .section .PortfolioPage { background: transparent; box-shadow: none; }
-
 
 /* Legacy component overrides to remove borders/animations */
 .title, .experience_page_title { display: none; }
