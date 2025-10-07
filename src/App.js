@@ -7,7 +7,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Experience from './sections/Experience'
 import Projects from './sections/Projects'
-import Writing from './sections/Writing'
+import Blogs from './sections/Blogs'
 import Contact from './sections/Contact'
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
-        <Writing />
+        <Blogs />
         <Contact />
       </Layout>
     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import allBlogs from '../components/allBlogs'
 
-export default function Writing() {
+export default function Blogs() {
   const preview = allBlogs.slice(0, 4)
   return (
-    <section id="writing" className="section writing">
-      <h2 className="section-title">Writing</h2>
+    <section id="blogs" className="section writing">
+      <h2 className="section-title">Blogs</h2>
       <div className="section-content">
         <div className="BlogsPage">
           {preview.map((blog) => (
@@ -20,7 +20,7 @@ export default function Writing() {
           ))}
         </div>
         <div className="cta-row" style={{marginTop: '16px'}}>
-          <a className="btn" href="/blogs">View all writing</a>
+          <a className="btn" href="#/blogs">View all blogs</a>
         </div>
       </div>
     </section>
