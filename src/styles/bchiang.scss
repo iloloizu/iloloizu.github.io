@@ -17,6 +17,11 @@ body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-seri
 .layout { position: relative; min-height: 100%; }
 .layout.two-col { display: grid; grid-template-columns: 1fr; gap: 32px; }
 @media (min-width: 992px) { .layout.two-col { grid-template-columns: 420px 1fr; } }
+@media (max-width: 991px) {
+  .layout.two-col { grid-template-columns: 1fr; }
+  .sticky-left { position: static; height: auto; border-right: 0; padding: 24px 16px; }
+  .scroll-right { padding: 24px 16px; }
+}
 
 .nova-bg { position: relative; }
 .nova-bg::before { content: ""; position: fixed; inset: 0; z-index: -2; background: radial-gradient(60% 80% at 20% 10%, rgba(100,255,218,0.12), transparent 60%), radial-gradient(50% 60% at 80% 20%, rgba(100,255,218,0.08), transparent 70%); }
@@ -38,6 +43,9 @@ body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-seri
 .socials a:hover { color: var(--accent); }
 
 .scroll-right { padding: 80px 24px; }
+@media (max-width: 991px) {
+  .hero { padding-top: 32px; }
+}
 
 .site-main, .scroll-right { max-width: var(--maxw); margin: 0 auto; }
 
@@ -65,8 +73,10 @@ body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-seri
 /* Legacy component overrides to remove borders/animations */
 .title, .experience_page_title { display: none; }
 .servives-container hr, .experiencePage hr { display: none; }
+hr { display: none; }
 .servives-container, .experiencePage, .portfolioPage, .BlogsPage, .contact { background: transparent !important; border: 0 !important; box-shadow: none !important; }
 *[class*="animate"], *[style*="animation"], *[style*="transition"] { animation: none !important; transition: none !important; }
+.servives-container img:hover, .experiencePage img:hover, .portfolioPage img:hover, img:hover { transform: none !important; filter: none !important; }
 .portfolios-data { display: grid; gap: 16px; }
 .portfolios-data > * { border: 1px solid rgba(100,255,218,0.12); border-radius: 12px; padding: 16px; background: rgba(2,12,27,0.55); }
 .contact .contact-section { background: rgba(2,12,27,0.55); border: 1px solid rgba(100,255,218,0.12); border-radius: 12px; padding: 24px; }
