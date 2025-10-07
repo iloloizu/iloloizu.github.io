@@ -4,7 +4,7 @@ import allBlogs from "../components/allBlogs";
 function BlogsPage() {
     return (
         <div className="section">
-            <h2 className="section-title">All Writing</h2>
+            <h2 className="section-title">All Blogs</h2>
             <div className="BlogsPage section-content">
                 {
                     allBlogs.map((blog)=>{

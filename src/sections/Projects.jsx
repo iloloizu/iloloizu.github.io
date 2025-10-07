@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import portfolios from '../components/allportfolios'
 
 export default function Projects() {
@@ -19,7 +20,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="cta-row" style={{marginTop: '16px'}}>
-          <a className="btn" href="/projects">View all projects</a>
+          <Link className="btn" to="/projects">View all projects</Link>
         </div>
       </div>
     </section>

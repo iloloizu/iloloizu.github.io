@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       <aside className="sticky-left" aria-label="Intro and navigation">
         <div className="identity">
           <h1 className="name">Ilolo Izu</h1>
-          <p className="role">Front End Engineer</p>
+          <p className="role">Full-Stack Software Developer</p>
           <p className="tagline">I build accessible, pixel‑perfect digital experiences for the web.</p>
         </div>
         <nav className="side-nav" aria-label="Section navigation">
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#writing">Writing</a></li>
+            <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>

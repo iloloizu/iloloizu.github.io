@@ -1,0 +1,278 @@
+.all-blogs-page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  padding: 40px 0;
+  position: relative;
+}
+
+.all-blogs-page::before { 
+  content: ""; 
+  position: fixed; 
+  inset: 0; 
+  z-index: -2; 
+  pointer-events: none; 
+  background-image: url('../images/Nova_Mac.jpg'), url('../images/Nova_Mac.heic'); 
+  background-size: cover; 
+  background-position: center; 
+  opacity: 1; 
+}
+
+.all-blogs-page::after { 
+  content: ""; 
+  position: fixed; 
+  inset: 0; 
+  z-index: -1; 
+  pointer-events: none; 
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0.04"/></feComponentTransfer></filter><rect width="100%" height="100%" filter="url(%23n)"/></svg>'); 
+  opacity: 0.35; 
+}
+
+.all-blogs-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  background: transparent;
+  border: 2px solid var(--accent);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.1),
+    0 2px 4px rgba(0,0,0,0.3);
+}
+
+.back-button::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.back-button:hover {
+  background: rgba(255,215,0,0.2);
+  border-color: var(--accent);
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    0 4px 12px rgba(255,215,0,0.4);
+  transform: translateY(-1px);
+}
+
+.back-button svg {
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover svg {
+  transform: translateX(-2px);
+}
+
+.all-blogs-title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.all-blogs-subtitle {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+}
+
+.all-blogs-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.blog-card {
+  background: rgba(2,12,27,0.55);
+  border: 1px solid rgba(255,215,0,0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.blog-card:hover {
+  border-color: rgba(255,215,0,0.3);
+  box-shadow: 0 8px 32px rgba(255,215,0,0.1);
+  transform: translateY(-4px);
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-card-image img {
+  transform: scale(1.05);
+}
+
+.blog-card-content {
+  padding: 24px;
+}
+
+.blog-date {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.blog-title {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.blog-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-link:hover {
+  color: var(--accent);
+}
+
+.blog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  background: transparent;
+  border: 2px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.1),
+    0 2px 4px rgba(0,0,0,0.3);
+}
+
+.read-more-btn::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.read-more-btn:hover {
+  background: rgba(255,215,0,0.15);
+  border-color: var(--accent);
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.2),
+    0 4px 8px rgba(255,215,0,0.3);
+  transform: translateY(-1px);
+}
+
+.read-more-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.read-more-btn:hover svg {
+  transform: translateX(2px) translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .all-blogs-page {
+    padding: 20px 0;
+  }
+  
+  .all-blogs-header {
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+  
+  .back-button {
+    padding: 10px 16px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  
+  .all-blogs-title {
+    font-size: 28px;
+  }
+  
+  .all-blogs-subtitle {
+    font-size: 16px;
+  }
+  
+  .all-blogs-content {
+    padding: 0 16px;
+  }
+  
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  
+  .blog-card-content {
+    padding: 20px;
+  }
+  
+  .blog-title {
+    font-size: 16px;
+  }
+}

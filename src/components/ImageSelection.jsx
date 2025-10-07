@@ -5,23 +5,10 @@ import '../styles/_about.scss'
 function ImageSelection() {
     return (
         <div className="ImageSelection"><br/>
-            <div className="img">
+            {/* <div className="img">
                 <img src={about} alt="Ilolo Izu"/>
-            </div>
+            </div> */}
             <div className="about-info"><br/>
-                <h2><span> Ilolo Izu</span>, Software Engineer</h2><br/>
-                <div className="about-details">
-                    <div className="left-section">
-                        <p>Full Name:</p>
-                        <p>Languages:</p>
-                        <p>Location:</p>
-                    </div>
-                    <div className="right-section">
-                        <p> Justin Ilolo Izu</p>
-                        <p> English, Spanish (Limited Working Proficiency)</p>
-                        <p> Dallas, TX, USA</p>
-                    </div>
-                </div>
                 <br/>
                 <p className="about-text">
 After graduating from Texas A&M in 2019 with a degree in Allied Health and a minor in Business Administration, I initially pursued a medical degree as a Physician Associate, but ultimately realized my true calling was in the exciting world of tech.
