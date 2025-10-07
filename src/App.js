@@ -2,6 +2,7 @@ import React from 'react';
 import '../src/styles/App.css'
 import '../src/styles/app_layout.scss'
 import '../src/styles/_vibrant.scss'
+import '../src/styles/bchiang.scss'
 import Layout from './layout/Layout'
 import Hero from './sections/Hero'
 import About from './sections/About'
