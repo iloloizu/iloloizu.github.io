@@ -15,25 +15,31 @@ html, body, #root, .App { height: 100%; background: var(--bg); color: var(--text
 body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; }
 
 .layout { position: relative; min-height: 100%; }
+.layout.two-col { display: grid; grid-template-columns: 1fr; gap: 32px; }
+@media (min-width: 992px) { .layout.two-col { grid-template-columns: 420px 1fr; } }
 
-.site-header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(10,25,47,0.6); border-bottom: 1px solid rgba(100,255,218,0.12); z-index: 40; }
-.site-nav { max-width: var(--maxw); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; }
-.site-nav .brand { color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: 0.3px; }
-.site-nav .nav-links { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
-.site-nav .nav-links a { color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 4px; }
-.site-nav .nav-links a:hover { color: var(--accent); background: var(--accent-muted); }
+.nova-bg { position: relative; }
+.nova-bg::before { content: ""; position: fixed; inset: 0; z-index: -2; background: radial-gradient(60% 80% at 20% 10%, rgba(100,255,218,0.12), transparent 60%), radial-gradient(50% 60% at 80% 20%, rgba(100,255,218,0.08), transparent 70%); }
+.nova-bg::after { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background-image: url('../images/Gradient-Blur-2.jpg'); background-size: cover; background-position: center; opacity: 0.24; mix-blend-mode: screen; }
 
-.left-rail, .right-rail { position: fixed; bottom: 0; display: none; }
-@media (min-width: 992px) {
-  .left-rail, .right-rail { display: block; }
-  .left-rail { left: var(--side-gap); }
-  .right-rail { right: var(--side-gap); writing-mode: vertical-rl; text-orientation: mixed; }
-  .left-rail ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
-  .left-rail a, .right-rail a { color: var(--muted); text-decoration: none; }
-  .left-rail a:hover, .right-rail a:hover { color: var(--accent); }
-}
+/* Rubberhose-inspired film grain and soft edges */
+.rubbergrain::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0.04"/></feComponentTransfer></filter><rect width="100%" height="100%" filter="url(%23n)"/></svg>'); opacity: 0.35; z-index: -1; }
+.soft-card { background: rgba(2,12,27,0.55); border: 1px solid rgba(100,255,218,0.12); box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7); border-radius: 14px; }
 
-.site-main { max-width: var(--maxw); margin: 0 auto; padding: 80px 24px; }
+.sticky-left { position: sticky; top: 0; align-self: start; height: 100vh; padding: 80px 24px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid rgba(100,255,218,0.12); }
+.sticky-left .name { font-size: clamp(28px, 6vw, 56px); margin: 0 0 8px; }
+.sticky-left .role { color: var(--muted); margin: 0 0 12px; }
+.sticky-left .tagline { color: var(--muted); max-width: 360px; }
+.side-nav ul { list-style: none; padding: 0; margin: 32px 0; display: grid; gap: 10px; }
+.side-nav a { color: var(--muted); text-decoration: none; padding: 8px 0; display: inline-block; }
+.side-nav a:hover { color: var(--accent); }
+.socials { display: flex; gap: 16px; flex-wrap: wrap; }
+.socials a { color: var(--muted); text-decoration: none; }
+.socials a:hover { color: var(--accent); }
+
+.scroll-right { padding: 80px 24px; }
+
+.site-main, .scroll-right { max-width: var(--maxw); margin: 0 auto; }
 
 .hero { padding: 120px 0 80px; }
 .eyebrow { color: var(--accent); margin: 0 0 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; }
