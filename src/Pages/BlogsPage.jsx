@@ -1,14 +1,11 @@
 import React from 'react';
-import Title from '../components/Title';
 import allBlogs from "../components/allBlogs";
 
 function BlogsPage() {
     return (
-        <div >
-            <div className="b-title">
-                <Title title={'Recent Blogs'} span={'Recent Blogs'} />
-            </div>
-            <div className="BlogsPage">
+        <div className="section">
+            <h2 className="section-title">All Writing</h2>
+            <div className="BlogsPage section-content">
                 {
                     allBlogs.map((blog)=>{
                         return <div className="blog" key={blog.id}>

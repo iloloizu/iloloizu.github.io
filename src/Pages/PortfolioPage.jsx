@@ -1,7 +1,5 @@
 import React from 'react';
-import Categories from '../components/Categories';
 import MenuItems from '../components/MenuItems';
-import Title from '../components/Title';
 import portfolios from '../components/allportfolios';
 import { useState } from 'react';
 
@@ -25,11 +23,8 @@ function PortfoliosPage() {
     return (
         <div className="portfolioPage">
             <div className="portfolios-content">
-                <div className="title">
-                    <Title title={'Projects'} span={'Projects'} />
-                </div>
-                <div className="portfolios-data">
-                    <Categories filter={filter} categories={categories} />
+                <h2 className="section-title">All Projects</h2>
+                <div className="portfolios-data section-content">
                     <MenuItems menuItem={menuItems} />
                 </div>
             </div>
