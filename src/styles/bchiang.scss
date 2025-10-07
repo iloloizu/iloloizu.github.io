@@ -3,8 +3,8 @@
 :root {
   --bg: #0a192f;
   --panel: #0a192f;
-  --text: #ccd6f6;
-  --muted: #8892b0;
+  --text: #d8e1ff;
+  --muted: #93a0c3;
   --accent: #64ffda;
   --accent-muted: rgba(100,255,218,0.1);
   --maxw: 1000px;
@@ -12,7 +12,10 @@
 }
 
 html, body, #root, .App { height: 100%; background: var(--bg); color: var(--text); }
-body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; }
+body { font-family: Inter, InterVariable, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.65; }
+@supports (font-variation-settings: normal) {
+  body { font-family: InterVariable, Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+}
 
 .layout { position: relative; min-height: 100%; }
 .layout.two-col { display: grid; grid-template-columns: 1fr; gap: 32px; }
@@ -80,5 +83,17 @@ hr { display: none; }
 .portfolios-data { display: grid; gap: 16px; }
 .portfolios-data > * { border: 1px solid rgba(100,255,218,0.12); border-radius: 12px; padding: 16px; background: rgba(2,12,27,0.55); }
 .contact .contact-section { background: rgba(2,12,27,0.55); border: 1px solid rgba(100,255,218,0.12); border-radius: 12px; padding: 24px; }
+
+/* Job bullets and badges */
+.experiencePage ul { list-style: none; padding-left: 0; display: grid; gap: 10px; }
+.experiencePage li { position: relative; padding-left: 20px; color: var(--muted); }
+.experiencePage li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
+.experiencePage img { width: 72px; height: auto; border-radius: 8px; opacity: 0.9; }
+.ServicesSection img { width: 120px; height: auto; border-radius: 10px; }
+.ServicesSection .s-title { margin: 8px 0; font-weight: 600; color: var(--text); }
+
+.badge-row { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.badge { font-size: 12px; line-height: 1; padding: 8px 10px; border-radius: 999px; color: #0a192f; background: rgba(100,255,218,0.9); border: 1px solid rgba(100,255,218,0.65); }
+.badge.alt { background: rgba(136,146,176,0.25); color: var(--text); border-color: rgba(136,146,176,0.3); }
 
 

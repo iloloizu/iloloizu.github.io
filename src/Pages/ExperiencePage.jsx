@@ -16,6 +16,13 @@ const resilia = Resilia
         </div>
         <div className='experiencePage'>
             <ServicesSection image={Vanguard_Bold} title={'Vanguard - 2023 to Present'} text={`Vanguard is one of the world's largest investment companies, offering a large selection of low-cost mutual funds, ETFs, advice, and related services.`} />
+            <div className="badge-row">
+                <span className="badge">Angular</span>
+                <span className="badge">RxJS</span>
+                <span className="badge">NgRx</span>
+                <span className="badge">Fastify</span>
+                <span className="badge alt">AWS</span>
+            </div>
             <div className="row">
                 <div className="col">
                     <ul>
@@ -33,6 +40,15 @@ const resilia = Resilia
             </div>
 
             <ServicesSection image={resilia} title={'Resilia - 2023'} text={`Resilia is a technology platform with a human touch. Resilia enables nonprofits to increase capacity and funders to go beyond the grant with technical assistance, coaching, and capacity-building support.`} />
+            <div className="badge-row">
+                <span className="badge">TypeScript</span>
+                <span className="badge">Node</span>
+                <span className="badge">React</span>
+                <span className="badge alt">GraphQL</span>
+                <span className="badge alt">Auth0</span>
+                <span className="badge alt">Stripe</span>
+                <span className="badge alt">AWS</span>
+            </div>
             <div className="row">
                 <div className="col">
                     <ul>
@@ -49,6 +65,12 @@ components, cloud-based platforms (Stripe, Auth0, Mailgun, Contentful, etc.), He
                 </div>
             </div>
             <ServicesSection image={rippleMatch} title={'RippleMatch - 2022'} text={`RippleMatch is the recruitment automation platform changing how Gen Z finds work. By replacing job boards with matching and automation, RippleMatch eliminates the most time-intensive parts of the recruitment process for both employers and job seekers. Leading employers such as Amazon, eBay, and Teach For America leverage RippleMatch to build diverse, high-performing teams and Gen Z job seekers across the country trust RippleMatch to launch and grow their careers.`} />
+            <div className="badge-row">
+                <span className="badge">Vue.js</span>
+                <span className="badge">Python</span>
+                <span className="badge">SQLAlchemy</span>
+                <span className="badge alt">Jest</span>
+            </div>
             <div className="row">
                 <div className="col">
                     <ul>
