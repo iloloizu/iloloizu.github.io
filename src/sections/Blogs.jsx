@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import allBlogs from '../components/allBlogs'
 
 export default function Blogs() {
-  const preview = allBlogs.slice(0, 4)
+  const preview = allBlogs.slice(0, 3)
   return (
     <section id="blogs" className="section blogs">
       <h2 className="section-title">Blogs</h2>
@@ -21,7 +21,7 @@ export default function Blogs() {
           ))}
         </div>
         <div className="cta-row" style={{marginTop: '16px'}}>
-          <Link className="btn" to="/blogs">View all blogs</Link>
+          <Link className="theme-toggle" to="/blogs">View all blogs</Link>
         </div>
       </div>
     </section>

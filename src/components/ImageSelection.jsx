@@ -18,7 +18,7 @@ During my time at university, I not only excelled in my studies, but I also left
 When I'm not working hard to perfect my programming skills, you can find me indulging in my other creative passions such as photography, traveling, playing video games, or sampling new and exciting culinary experiences. In short, I am a person who never stops exploring and is always on the lookout for my next big adventure. I'm currently a Software Engineer at Vanguard.
                 </p> 
                 <br/> <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer">
-                <button className="btn">Download Résumé</button></a>
+                <button className="theme-toggle">Download Résumé</button></a>
                 <br/>
                 <br/>
                 <br/>

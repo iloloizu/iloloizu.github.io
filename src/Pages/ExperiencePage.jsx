@@ -11,20 +11,9 @@ function ExperiencePage() {
       title: "Application Developer 2",
       company: "Vanguard",
       companyUrl: "https://investor.vanguard.com/",
-      description: "Vanguard is one of the world's largest investment companies, offering a large selection of low-cost mutual funds, ETFs, advice, and related services.",
+      description: "Vanguard is one of the world's largest investment companies, offering a large selection of low-cost mutual funds, ETFs, advice, and related services.\n\nAs a Frontend Software Engineer, I develop high-performing web applications and RESTful microservices using React, Node.js, Angular, RxJS, and NgRx, while leveraging AI tools like GitHub Copilot and ChatGPT to enhance development efficiency. I've acted as a de facto Product Engineer for the Auto-Invest app, translating business goals into technical deliverables and leading cross-functional alignment on vision and timelines. My contributions include improving app load time by 70% through Angular performance optimizations, building Node.js and AWS serverless backends that process over 2M records daily, and defining SLOs/SLIs to ensure 99.95% uptime across six microservices. Additionally, I've led org-wide training sessions on performance optimization, observability, and reliability, equipping 30+ engineers and PMs with best practices that improved overall product responsiveness and stability.",
       image: null, // No image for Application Developer 2 as requested
-      achievements: [
-        "Frontend Software Engineer working in React, NodeJS, Angular, RxJS, and NgRx. Building Angular web applications and RESTful microservices. Utilizing AI services such as Copilot, ChatGPT.",
-        "Acted as a de facto Product Engineer for key initiatives in the Auto-Invest app, translating business goals into technical deliverables and aligning cross-functional teams on product vision and delivery timelines.",
-        "Spearheaded the performance optimization of the Auto-Invest app, improving app load time by 70% through refactoring Angular's change detection strategy—directly enhancing user experience and engagement.",
-        "Developed and maintained the \"Manage the Loop\" feature using React.js, bridging the gap between Jira and Appian, enabling advisors to seamlessly monitor task progress, synchronize updates, and reduce manual reconciliation.",
-        "Developed and maintained Node.js-based middle-tier services for Auto-Invest functionality across ETFs, mutual funds, and Roth IRAs, supporting scheduled investment execution and account eligibility checks.",
-        "Built a serverless backend with AWS Lambda, S3, and AWS Glue to process 2M+ records daily, cutting infrastructure costs by 20% while maintaining sub-second latency.",
-        "Defined, monitored, and reported SLOs/SLIs across six microservices, ensuring 99.95% uptime and reliability for 10K+ daily advisor interactions.",
-        "Designed modular services for logging, gatekeeping, and authentication, ensuring secure transaction flows, and scalable orchestration between front-end triggers and backend investment engines.",
-        "Delivered and demoed a departmental knowledge-sharing session on performance optimization, empowering 30+ engineers with techniques that improved app responsiveness across the org.",
-        "Co-led a quarterly training series on Honeycomb and PagerDuty tooling for developers and PMs, fostering a shared understanding of product reliability, observability, and customer support strategy."
-      ],
+      achievements: null,
       technologies: ["React", "Node.js", "Angular", "RxJS", "NgRx", "AWS Lambda", "AWS S3", "AWS Glue", "Jira", "Appian"]
     },
     {
@@ -33,19 +22,9 @@ function ExperiencePage() {
       title: "Application Developer 1",
       company: "Vanguard",
       companyUrl: "https://investor.vanguard.com/",
-      description: "Vanguard is one of the world's largest investment companies, offering a large selection of low-cost mutual funds, ETFs, advice, and related services.",
+      description: "I contributed to the development of the New Investor IRA Experience, which drove $250M in investments, increased overall investment rates by 4%, and achieved a 22% adoption rate of Target Retirement Funds among new clients. I led efforts to resolve key system issues, including Quick Ticket tooltip bugs and order validation inefficiencies, improving reliability, reducing user errors by 15%, and increasing validation accuracy by 20%. Additionally, I enhanced accessibility compliance from 85% to 95%, participated in on-call rotations to reduce MTTR by 10%, and mentored junior engineers through the Black at Vanguard ERG, co-creating a mentorship program to support new crew members while being regularly consulted by leadership for insights on product trade-offs. I consistently received high-impact performance ratings for innovation, leadership, and user-centered delivery.",
       image: Vanguard_Bold,
-      achievements: [
-        "Contributed to the development of the New Investor IRA Experience, which drove $250M in investments and resulted in a 4% increase in overall investment rates and a 22% adoption rate of Target Retirement Funds (TRFs) by new clients.",
-        "Led the resolution of Quick Ticket tooltip issues, improving system reliability and reducing reported user errors by 15%.",
-        "Optimized order validation for quick transactions and automated investment ETF pages, increasing validation accuracy by 20% and reducing processing times for efficient order handling.",
-        "Enhanced accessibility on the New IRA Page, improving compliance from 85% to 95%, ensuring WCAG standards.",
-        "Contributed to PagerDuty on-call rotations, reducing MTTR by 10% through timely response, improving system reliability.",
-        "Co-Created a mentorship program for new crew at Vanguard through Vanguard's Black at Vanguard ERG.",
-        "Mentored a junior engineer through the Black at Vanguard ERG, fostering career growth, product sense, and cross-team visibility.",
-        "Regularly consulted by senior leadership for insights on product feature trade-offs due to deep domain expertise in investing workflows and Vanguard platform capabilities.",
-        "Received multiple high-impact ratings in quarterly reviews for innovation, thought leadership, and consistent delivery of user-centered features under tight deadlines."
-      ],
+      achievements: null,
       technologies: ["Angular", "RxJS", "NgRx", "Fastify", "AWS", "PagerDuty"]
     },
     {
@@ -54,17 +33,9 @@ function ExperiencePage() {
       title: "Full-Stack Software Engineer I",
       company: "Resilia",
       companyUrl: "https://www.resilia.com/",
-      description: "Resilia is a technology platform with a human touch. Resilia enables nonprofits to increase capacity and funders to go beyond the grant with technical assistance, coaching, and capacity-building support.",
+      description: "Resilia is a technology platform with a human touch. Resilia enables nonprofits to increase capacity and funders to go beyond the grant with technical assistance, coaching, and capacity-building support.\n\nAs a Full-Stack Software Engineer I, I developed end-to-end solutions across Heroku and AWS infrastructures while integrating cloud-based services like Stripe, Auth0, Mailgun, and Contentful. I collaborated closely with Product and Design teams to address key challenges faced by nonprofit users, designing and implementing APIs, databases, and user experiences that enhanced platform usability and scalability. By identifying codebase patterns and elevating technical risks early, I helped guide informed engineering decisions and contributed to building a strong technical foundation as an early member of the growing Engineering team at Resilia.",
       image: Resilia,
-      achievements: [
-        "Worked as a Full-Stack Software Engineer I with: Typescript, node, GraphQL APIs, ReactJS, Material UI design components, cloud-based platforms (Stripe, Auth0, Mailgun, Contentful, etc.), Heroku infrastructure, AWS infrastructure",
-        "Software development experience with proficiency in frontend and backend frameworks/languages, testing practices and frameworks, API design and implementation, and database design and migrations. Collaborated with Product and Design teams to understand and solve core problems faced by nonprofit users",
-        "Built end-to-end technology solutions with hands-on experience in UX, API, and DB layers",
-        "Navigated codebase to identify patterns and antipatterns for building new product features",
-        "Elevated risks and unknowns with proposed tools and technologies to make informed decisions with Engineering, Product, and Design teams",
-        "Directly impacted nonprofit users by enabling seamless utilization of Resilia's platform and helping nonprofits strengthen operations, scale impact, and communicate work",
-        "Early and crucial contributor to growing Engineering team, reporting to the Director of Engineering"
-      ],
+      achievements: null,
       technologies: ["TypeScript", "Node.js", "React", "GraphQL", "Auth0", "Stripe", "AWS"]
     },
     {
@@ -73,19 +44,9 @@ function ExperiencePage() {
       title: "Full-Stack Software Engineer",
       company: "RippleMatch",
       companyUrl: "https://ripplematch.com/",
-      description: "RippleMatch is the recruitment automation platform changing how Gen Z finds work. By replacing job boards with matching and automation, RippleMatch eliminates the most time-intensive parts of the recruitment process for both employers and job seekers.",
+      description: "RippleMatch is the recruitment automation platform changing how Gen Z finds work. By replacing job boards with matching and automation, RippleMatch eliminates the most time-intensive parts of the recruitment process for both employers and job seekers.\n\n Collaborated with key stakeholders and senior engineers from story grooming to company-wide demos, building scalable, state-managed features from concept to implementation. I improved recruiter analytics by adding filter functionality and accessibility enhancements, implemented a third-party API for recruiter tagging and email notifications, and optimized load performance by limiting candidate tracking over six months. Additionally, I designed a custom UI feature for consistent “pill-button” sizing across the platform, contributed unit tests for both frontend and backend tickets, and served on the event planning committee to strengthen collaboration and team culture within the engineering department.",
       image: Ripple,
-      achievements: [
-        "Worked as a Full-Stack Software Engineer primarily with Vue.js, Python, Jest, and SQLAlchemy",
-        "Worked with key stakeholders and Senior Engineers in an Agile Environment: from story grooming sessions to a live demo presentation to the entire company",
-        "Built scalable features from concept to implementation. Worked on projects dealing with state management",
-        "Created improvements to the recruiter analytics by adding filtering options. This included displaying the currently applied filters, assisting with accessibility",
-        "Implemented a third-party API that allows recruiters to tag each other, thus being notified by email",
-        "Worked on limiting the number of candidates tracked by email links within 6 months positively affecting load performance when viewing analytics as a recruiter",
-        "Implemented and constructed my own UI/UX feature to help display appropriate 'pill-button' sizing throughout the site",
-        "Experience blogs unit tests for Frontend and Backend tickets",
-        "Part of the event planning committee to help foster interpersonal and collaborative skills throughout the engineering dept"
-      ],
+      achievements: null, 
       technologies: ["Vue.js", "Python", "SQLAlchemy", "Jest"]
     },
     {
@@ -131,13 +92,22 @@ function ExperiencePage() {
               </div>
             )}
             
-            <p className="experience-description">{exp.description}</p>
-            
-            <ul className="experience-achievements">
-              {exp.achievements.map((achievement, idx) => (
-                <li key={idx}>{achievement}</li>
+            <p className="experience-description">
+              {exp.description.split('\n').map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx < exp.description.split('\n').length - 1 && <br />}
+                </React.Fragment>
               ))}
-            </ul>
+            </p>
+            
+            {exp.achievements && (
+              <ul className="experience-achievements">
+                {exp.achievements.map((achievement, idx) => (
+                  <li key={idx}>{achievement}</li>
+                ))}
+              </ul>
+            )}
             
             <div className="experience-technologies">
               {exp.technologies.map((tech, idx) => (
@@ -149,7 +119,7 @@ function ExperiencePage() {
       ))}
       
       <div className="resume-download">
-        <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer" className="btn">
+        <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer" className="theme-toggle">
           Download Résumé
         </a>
       </div>

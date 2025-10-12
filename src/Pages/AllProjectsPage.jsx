@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 import portfolios from '../components/allportfolios';
 
 function AllProjectsPage() {
-  // Sort projects by year (assuming they're from 2021-2022 based on the data)
-  const sortedProjects = portfolios.map((project, index) => ({
-    ...project,
-    year: index < 3 ? '2022' : '2021' // Assign years based on project order
-  })).sort((a, b) => b.year.localeCompare(a.year));
+  // Sort projects by year (descending order, newest first)
+  const sortedProjects = [...portfolios].sort((a, b) => b.year.localeCompare(a.year));
 
   // Extract technologies from project descriptions
   const extractTechnologies = (paragraph) => {
@@ -25,7 +22,10 @@ function AllProjectsPage() {
       'Postgresql': 'PostgreSQL',
       'Ruby': 'Ruby',
       'SQLite': 'SQLite',
-      'JSON': 'JSON'
+      'JSON': 'JSON',
+      'React Native': 'React Native',
+      'Supabase': 'Supabase',
+      'Typescript': 'Typescript',
     };
     
     const foundTechs = [];
@@ -81,7 +81,7 @@ function AllProjectsPage() {
                   </div>
                 </div>
                 <div className="table-cell made-at-cell">
-                  Flatiron School
+                  {project.madeAt}
                 </div>
                 <div className="table-cell built-with-cell">
                   <div className="tech-badges">
@@ -92,28 +92,32 @@ function AllProjectsPage() {
                 </div>
                 <div className="table-cell link-cell">
                   <div className="project-links">
-                    <a 
-                      href={project.link1} 
-                      target="_blank" 
-                      rel="noreferrer"
-                      className="project-link"
-                    >
-                      {project.icon1}
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href={project.link2} 
-                      target="_blank" 
-                      rel="noreferrer"
-                      className="project-link"
-                    >
-                      {project.icon2}
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </a>
+                    {project.link1 && (
+                      <a 
+                        href={project.link1} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="project-link"
+                      >
+                        {project.icon1}
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </a>
+                    )}
+                    {project.link2 && (
+                      <a 
+                        href={project.link2} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="project-link"
+                      >
+                        {project.icon2}
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

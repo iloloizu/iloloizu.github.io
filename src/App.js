@@ -5,6 +5,7 @@ import '../src/styles/_vibrant.scss'
 import '../src/styles/nova.scss'
 import '../src/styles/_all-blogs.scss'
 import '../src/styles/_all-projects.scss'
+import '../src/styles/_contact.scss'
 import Layout from './layout/Layout'
 import Hero from './sections/Hero'
 import About from './sections/About'
@@ -14,6 +15,7 @@ import Blogs from './sections/Blogs'
 import Contact from './sections/Contact'
 import AllBlogsPage from './Pages/AllBlogsPage'
 import AllProjectsPage from './Pages/AllProjectsPage'
+import LinkTree from './Pages/LinkTree'
 
 function HomePage() {
   return (
@@ -35,6 +37,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs" element={<AllBlogsPage />} />
         <Route path="/projects" element={<AllProjectsPage />} />
+        <Route path="/socials" element={<LinkTree />} />
       </Routes>
     </div>
   )

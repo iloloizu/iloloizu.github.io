@@ -20,7 +20,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="cta-row" style={{marginTop: '16px'}}>
-          <Link className="btn" to="/projects">View all projects</Link>
+          <Link className="theme-toggle" to="/projects">View all projects</Link>
         </div>
       </div>
     </section>

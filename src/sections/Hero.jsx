@@ -8,7 +8,7 @@ export default function Hero() {
       <h2 className="subhead">I build performant, accessible web experiences.</h2>
       <p className="lede">I’m a developer focused on crafting usable, inclusive interfaces and building products end‑to‑end. Currently open to opportunities and collaborations.</p>
       <div className="cta-row">
-        <a href="#projects" className="btn primary">View Projects</a>
+        <a href="#projects" className="theme-toggle primary">View Projects</a>
         <a href="#contact" className="btn">Get in touch</a>
       </div>
     </section>

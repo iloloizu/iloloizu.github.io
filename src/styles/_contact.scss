@@ -2,27 +2,33 @@
 .contact{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  margin: 60px 10%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .contact-section{
   width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: start;
+  box-sizing: border-box;
 }
 
 .contact-left{
   display: flex;
   flex-direction: column;
   gap: 32px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-header {
@@ -30,17 +36,6 @@
   flex-direction: column;
   gap: 20px;
   position: relative;
-}
-
-.contact-header::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), transparent);
-  border-radius: 2px;
 }
 
 .contact-left h1{
@@ -106,18 +101,10 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.contact-detail::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,215,0,0.05), transparent);
-  transition: left 0.6s ease;
-}
 
 .contact-detail:hover::before {
   left: 100%;
@@ -151,6 +138,8 @@
   font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .contact-email:hover {
@@ -162,12 +151,18 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-right label{
@@ -181,6 +176,8 @@
 .contact-right input, .contact-right textarea{
   border: 2px solid var(--accent);
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 12px 20px;
   border-radius: 8px;
   background: rgba(0,0,0,0.3);
@@ -292,9 +289,10 @@
 }
 @media(max-width:768px){
   .contact{
-      gap: 40px;
-      margin: 40px 6%;
-      align-items: start;
+      gap: 0;
+      margin: 0 auto;
+      padding: 0;
+      align-items: flex-start;
   }
  
   .contact-section{

@@ -1,63 +1,33 @@
 import React from 'react'
-import avatar from '../images/about.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCalendar, faLaptop } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faMedium, faGithub, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 function LinkTree() {
   return (
-    <div className="HomePage"> 
-        <div className="LinkTree">
-           <div className="link-image">
-            <img src={avatar} alt="Ilolo Izu"/>
-           </div>
-          <h1 className='link-header'>
-            Ilolo Izu
-          </h1>
-          <div className='link-icons'>
-             <a href='mailto: iloloizu97@gmail.com' target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faEnvelope} className="link-icon" target="_blank"/>
-             </a>
-
-            <a href='https://calendly.com/ilolo' target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faCalendar} className="link-icon" target="_blank"/>
-            </a>
-
-            <a href='https://www.linkedin.com/in/ilolo-izu/' target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className="link-icon" target="_blank"/>
-            </a>
-
-            <a href='https://iloloizu.com/' target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLaptop} className="link-icon" target="_blank"/>
-            </a>
-          </div>
-          <div className='linktree'>
-            <a href='https://calendly.com/ilolo' className='linktree-icon' target="_blank" rel="noreferrer">Let's Connect 
-              <FontAwesomeIcon icon={faCalendar} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://iloloizu.com/' className='linktree-icon' target="_blank" rel="noreferrer">Developer Portfolio
-              <FontAwesomeIcon icon={faLaptop} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://www.linkedin.com/in/ilolo-izu/' className='linktree-icon' target="_blank" rel="noreferrer">LinkedIn 
-              <FontAwesomeIcon icon={faLinkedin} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://ilolo.medium.com/' className='linktree-icon' target="_blank" rel="noreferrer">Medium Blog
-              <FontAwesomeIcon icon={faMedium} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://github.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Github
-              <FontAwesomeIcon icon={faGithub} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://instagram.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">Instagram
-              <FontAwesomeIcon icon={faInstagram} className="homepage-icon" target="_blank"/>
-            </a>
-            <a href='https://youtube.com/iloloizu' className='linktree-icon' target="_blank" rel="noreferrer">YouTube
-              <FontAwesomeIcon icon={faYoutube} className="homepage-icon" target="_blank"/>
-            </a>
-
-          </div>
+    <div className="linktree-page nova-bg"> 
+      <div className="linktree-container">
+        <h1 className='linktree-header'>Ilolo Izu</h1>
+        <p className='linktree-tagline'>Let's connect.</p>
+        
+        <div className='linktree-links'>
+          <a href='https://instagram.com/iloloizu' className='linktree-btn' target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="linktree-icon"/>
+            <span>Instagram</span>
+          </a>
+          
+          <a href='mailto:iloloizu97@gmail.com' className='linktree-btn' target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faEnvelope} className="linktree-icon"/>
+            <span>Email</span>
+          </a>
+          
+          <a href='https://youtube.com/iloloizu' className='linktree-btn' target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faYoutube} className="linktree-icon"/>
+            <span>YouTube</span>
+          </a>
         </div>
+      </div>
     </div>
-
   )
 }
 
