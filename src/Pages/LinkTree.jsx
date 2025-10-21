@@ -1,7 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faCamera } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 
 function LinkTree() {
   return (
@@ -11,6 +12,11 @@ function LinkTree() {
         <p className='linktree-tagline'>Let's connect.</p>
         
         <div className='linktree-links'>
+          <Link to='/portfolio' className='linktree-btn'>
+            <FontAwesomeIcon icon={faCamera} className="linktree-icon"/>
+            <span>Portfolio</span>
+          </Link>
+
           <a href='https://instagram.com/iloloizu' className='linktree-btn' target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} className="linktree-icon"/>
             <span>Instagram</span>

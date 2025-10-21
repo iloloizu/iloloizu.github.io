@@ -4,23 +4,35 @@ import '../styles/_about.scss'
 
 function ImageSelection() {
     return (
-        <div className="ImageSelection"><br/>
-            {/* <div className="img">
-                <img src={about} alt="Ilolo Izu"/>
-            </div> */}
-            <div className="about-info"><br/>
-                <br/>
+        <div>
+            <div className="about-info">
                 <p className="about-text">
-After graduating from Texas A&M in 2019 with a degree in Allied Health and a minor in Business Administration, I initially pursued a medical degree as a Physician Associate, but ultimately realized my true calling was in the exciting world of tech.
-
-During my time at university, I not only excelled in my studies, but I also left my mark on the world of athletics as a Track and Field All-American. Additionally, I made sure to give back to my community through various volunteer organizations.
-
-When I'm not working hard to perfect my programming skills, you can find me indulging in my other creative passions such as photography, traveling, playing video games, or sampling new and exciting culinary experiences. In short, I am a person who never stops exploring and is always on the lookout for my next big adventure. I'm currently a Software Engineer at Vanguard.
+                I’m Ilolo Izu (e-lo-lo e-zu), a Product-oriented Full-Stack Software Engineer from Houston, TX—currently building and optimizing Auto-Invest tools at Vanguard. Former All-American Track & Field athlete turned technologist, blending technical depth with sharp communication, empathy, and adaptability. My journey from healthcare to software engineering fuels a passion for solving real user problems and building intuitive, high-impact solutions. Outside of work, I’m all about fitness, <a 
+    href="https://www.iloloizu.com/#/portfolio" 
+    className="portfolio-link"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+        color: 'var(--accent)',
+        textDecoration: 'none',
+        position: 'relative',
+        transition: 'color 0.25s'
+    }}
+    onMouseOver={e => {
+        e.target.style.textDecoration = 'none';
+        e.target.style.textDecorationColor = '#FFD600'; // bright yellow
+        e.target.style.color = '#var(--accent)';
+    }}
+    onMouseOut={e => {
+        e.target.style.textDecoration = 'none';
+        e.target.style.color = 'var(--accent)';
+    }}
+>
+photography
+</a>, traveling, cooking, and creating genuine connections wherever I go.
                 </p> 
                 <br/> <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer">
                 <button className="theme-toggle">Download Résumé</button></a>
-                <br/>
-                <br/>
                 <br/>
             </div>
         </div>

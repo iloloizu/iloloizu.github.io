@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 export default function Layout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [activeSection, setActiveSection] = useState('about')
   const cursorGlowRef = useRef(null)
   const rafRef = useRef(null)
+
 
   useEffect(() => {
     if (!isDarkMode || !cursorGlowRef.current) return
@@ -93,6 +97,27 @@ export default function Layout({ children }) {
           <h1 className="name">Ilolo Izu</h1>
           <p className="role">Full-Stack Software Developer</p>
           <p className="tagline">Athlete’s discipline, engineer’s precision.</p>
+          <div className="socials-mobile">
+            <a href="https://www.linkedin.com/in/iloloizu/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://github.com/iloloizu" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://ilolo.medium.com/" target="_blank" rel="noreferrer" aria-label="Medium">
+              <FontAwesomeIcon icon={faMedium} />
+            </a>
+          <a 
+            onClick={toggleTheme}
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {isDarkMode ? (
+              <FontAwesomeIcon icon={faSun} />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} />
+            )}
+          </a>
+          </div>
         </div>
         <nav className="side-nav" aria-label="Section navigation">
           <ul>
@@ -110,30 +135,17 @@ export default function Layout({ children }) {
             aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDarkMode ? (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="2"/>
-                <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
+              <FontAwesomeIcon icon={faSun} />
             ) : (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <FontAwesomeIcon icon={faMoon} />
             )}
             <span>{isDarkMode ? 'Light' : 'Dark'}</span>
           </button>
         </div>
         <div className="socials">
-          <a href="https://github.com/iloloizu" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/iloloizu/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://instagram.com/iloloizu" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://youtube.com/iloloizu" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://github.com/iloloizu" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://ilolo.medium.com/" target="_blank" rel="noreferrer">Medium</a>
         </div>
       </aside>
 
@@ -141,12 +153,6 @@ export default function Layout({ children }) {
         {children}
         <footer className="site-footer">
           <p>Built with <a href="https://react.dev/" target="_blank" rel="noreferrer">React</a> and <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">Sass</a>. Deployed on <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>, build by Ilolo Izu, with inspiration from <a href="https://brittanychiang.com/" target="_blank" rel="noreferrer">Brittany Chiang</a>.</p>
-          <div className="socials-mobile">
-            <a href="https://github.com/iloloizu" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/iloloizu/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://instagram.com/iloloizu" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://youtube.com/iloloizu" target="_blank" rel="noreferrer">YouTube</a>
-          </div>
         </footer>
       </main>
     </div>
