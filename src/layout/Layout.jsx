@@ -143,7 +143,7 @@ export default function Layout({ children }) {
           </button>
         </div>
         <div className="socials">
-          <a href="https://www.linkedin.com/in/iloloizu/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/ilolo-izu/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/iloloizu" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://ilolo.medium.com/" target="_blank" rel="noreferrer">Medium</a>
         </div>

@@ -119,7 +119,7 @@ function ExperiencePage() {
       ))}
       
       <div>
-        <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer" className="theme-toggle">
+        <a href='https://drive.google.com/file/d/1BYuFc9PkwqqIALw3O-oW50Vg7QloCtye/view?usp=sharing' target="_blank" rel="noreferrer" className="theme-toggle">
           Download Résumé
         </a>
       </div>

@@ -31,7 +31,7 @@ function ImageSelection() {
 photography
 </a>, traveling, cooking, and creating genuine connections wherever I go.
                 </p> 
-                <br/> <a href='https://drive.google.com/file/d/1oJ3wIAtZedc-QR4dfED2jEStNOdrt2et/view' target="_blank" rel="noreferrer">
+                <br/> <a href='https://drive.google.com/file/d/1BYuFc9PkwqqIALw3O-oW50Vg7QloCtye/view?usp=sharing' target="_blank" rel="noreferrer">
                 <button className="theme-toggle">Download Résumé</button></a>
                 <br/>
             </div>
