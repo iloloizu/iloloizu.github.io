@@ -6,12 +6,24 @@ import port6 from '../images/spacecitysneakers.png'
 import port7 from '../images/eldenringwikiapp.png'
 import port8 from '../images/Stylo.png'
 import port9 from '../images/ServePro.png'
+import port10 from '../images/port10.png'
 
 const port2 = 'https://miro.medium.com/max/1400/1*ZPhW7TFH7S42jYPtRZahmA.png';
 
 const portfolios = [
     {
         id: 1,
+        category: "Front-End",
+        image: port10,
+        title: 'SkillTrack',
+        paragraph: "Built with HTML, CSS, Typescript, ReactJS. A Learning Management System (LMS) website that allows users to track their skills and progress.",
+        link1: 'https://iloloizu.github.io/HU-interview/',
+        icon1: 'Website',
+        year: '2025',
+        madeAt: 'Interview Project for MBA Program'
+    },
+    {
+        id: 2,
         category: "Full-Stack",
         image: port8,
         title: 'Stylo',
@@ -22,7 +34,7 @@ const portfolios = [
         madeAt: 'Consulting Project'
     },
     {
-        id: 2,
+        id: 3,
         category: "Full-Stack",
         image: port9,
         title: 'ServePro Accounting Software',
@@ -31,7 +43,7 @@ const portfolios = [
         madeAt: 'Consulting Project'
     },
     {
-        id: 2,
+        id: 4,
         category: "Full-Stack",
         link1: 'https://github.com/iloloizu/Phase-5-Project',
         link2: 'https://www.youtube.com/watch?v=iiir9lTZ5S0',
@@ -44,7 +56,7 @@ const portfolios = [
         madeAt: 'Flatiron School'
     },
     {
-        id: 3,
+        id: 5,
         category: "Full-Stack",
         link1: 'https://github.com/hainlthit/elden-ring',
         link2: 'https://youtu.be/O6JJQNgcTp8',
@@ -57,7 +69,7 @@ const portfolios = [
         madeAt: 'Flatiron School'
     },
     {
-        id: 4,
+        id: 6,
         category: 'Full-Stack',
         link1: 'https://github.com/keroviv86/Phase-3-Project-Frontend',
         link2: 'https://youtu.be/_n3XKR7tg7c',
@@ -70,7 +82,7 @@ const portfolios = [
         madeAt: 'Flatiron School'
     },
     {
-        id: 5,
+        id: 7,
         category: 'Front-End',
         link1: 'https://github.com/shaniburde/Flatiron-Phase-2-Project',
         link2: 'https://youtu.be/QNP-4EJaSWw',
@@ -83,7 +95,7 @@ const portfolios = [
         madeAt: 'Flatiron School'
     },
     {
-        id: 6,
+        id: 8,
         category: 'Front-End',
         link1: 'https://github.com/iloloizu/phase1_project',
         link2: 'https://youtu.be/da8w18wVudw',
@@ -96,7 +108,7 @@ const portfolios = [
         madeAt: 'Flatiron School'
     },
     {
-        id: 7,
+        id: 9,
         category: 'Back-End',
         link1: 'https://github.com/keroviv86/phase-3-sinatra-react-project',
         link2: 'https://youtu.be/_n3XKR7tg7c',
@@ -109,7 +121,7 @@ const portfolios = [
         madeAt: 'Flatiron School'
     },
     {
-        id: 8,
+        id: 10,
         category:  "Pre-Flatiron",
         link1: 'https://github.com/iloloizu/My-new-website',
         link2: 'https://iloloizu.github.io/My-new-website/',
