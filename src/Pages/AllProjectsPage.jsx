@@ -1,12 +1,14 @@
 import React from 'react'
 import EditorialLayout from '../layout/EditorialLayout'
 import portfolios from '../components/allportfolios'
+import EdBack from '../components/EdBack'
 
 function AllProjectsPage() {
   const sortedProjects = [...portfolios].sort((a, b) => b.year.localeCompare(a.year))
 
   return (
     <EditorialLayout>
+      <EdBack />
       <h2 className="ed-label">All Work</h2>
       <h1 className="ed-page-title">Projects</h1>
       <p className="ed-page-intro">

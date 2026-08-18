@@ -97,6 +97,38 @@
   to { max-width: 768px; }
 }
 
+/* ---- back link on interior pages ---- */
+.ed-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 36px;
+  font-family: var(--ed-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ed-muted);
+
+  svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.15s ease;
+  }
+
+  &:hover {
+    color: var(--ed-accent);
+
+    svg {
+      transform: translateX(-3px);
+    }
+  }
+}
+
+/* a label directly after the back link sits closer to it */
+.ed-back + .ed-label {
+  margin-top: 40px;
+}
+
 /* ---- interior page heading ---- */
 .ed-page-title {
   font-family: var(--ed-serif);

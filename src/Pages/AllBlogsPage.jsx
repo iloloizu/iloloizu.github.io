@@ -1,10 +1,12 @@
 import React from 'react'
 import EditorialLayout from '../layout/EditorialLayout'
 import allBlogs from '../components/allBlogs'
+import EdBack from '../components/EdBack'
 
 function AllBlogsPage() {
   return (
     <EditorialLayout>
+      <EdBack />
       <h2 className="ed-label">All Writing</h2>
       <h1 className="ed-page-title">Blogs</h1>
       <p className="ed-page-intro">
