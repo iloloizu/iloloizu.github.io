@@ -280,8 +280,25 @@
     color: var(--ed-text);
   }
 
-  p.ed-thesis {
-    font-size: 18px;
+  /* headshot + quote lead row; the bio paragraph flows directly under */
+  .ed-intro-lead {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 24px;
+
+    .ed-thesis {
+      margin: 0;
+    }
+  }
+
+  .ed-headshot {
+    width: 190px;
+    height: 208px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    display: block;
   }
 
   a {
@@ -750,6 +767,12 @@
 
   .ed-hero {
     margin: 40px 0 36px;
+  }
+
+  .ed-intro .ed-intro-lead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .ed-label {

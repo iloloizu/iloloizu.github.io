@@ -7,6 +7,7 @@ import lawtradesLogo from '../images/logos/lawtrades.png'
 import resiliaLogo from '../images/logos/resilia.png'
 import ripplematchLogo from '../images/logos/ripplematch.png'
 import jackLogo from '../images/logos/jackinthebox.png'
+import headshot from '../images/headshot_bw.jpg'
 
 // titles and dates mirror LinkedIn
 const experience = [
@@ -50,10 +51,13 @@ export default function EditorialHome() {
       <h1 className="ed-hero">AI Engineer, Athlete,<br />MBA Candidate</h1>
 
       <div className="ed-intro">
-        <p className="ed-thesis">
-          Great products come from teams with empathy and pace — people who understand
-          real users deeply, ship quickly, and refine without ego.
-        </p>
+        <div className="ed-intro-lead">
+          <img className="ed-headshot" src={headshot} alt="Ilolo Izu" />
+          <p className="ed-thesis">
+            Great products come from teams with empathy and pace — people who understand
+            real users deeply, ship quickly, and refine without ego.
+          </p>
+        </div>
         <p>
           I&rsquo;m Ilolo Izu (e&#8209;lo&#8209;lo e&#8209;zu), a product-oriented engineer from Houston, TX —
           currently leading AI product engineering at Lawtrades, building an AI and
