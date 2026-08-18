@@ -1,0 +1,437 @@
+/* ============================================================
+   Editorial theme — restrained, near-monochrome, one accent.
+   Everything is scoped under .editorial so the legacy pages
+   (nova theme) keep working untouched on their own routes.
+   ============================================================ */
+
+.editorial {
+  /* ---- palette ---- */
+  --ed-bg: hsl(0, 0%, 98%);
+  --ed-text: hsl(0, 0%, 7%);
+  --ed-muted: hsl(0, 0%, 46%);
+  --ed-faint: hsl(0, 0%, 62%);
+  --ed-line: hsl(0, 0%, 89%);
+  --ed-accent: hsl(351, 66%, 48%);
+  --ed-tile: hsl(0, 0%, 100%);
+  --ed-panel: hsla(0, 0%, 100%, 0.85);
+
+  /* ---- type ---- */
+  --ed-serif: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --ed-sans: 'Inter', -apple-system, 'Helvetica Neue', sans-serif;
+  --ed-mono: 'Space Mono', 'SFMono-Regular', 'Menlo', monospace;
+
+  background: var(--ed-bg);
+  color: var(--ed-text);
+  font-family: var(--ed-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  min-height: 100vh;
+  min-height: 100dvh;
+  transition: background 0.25s ease, color 0.25s ease;
+
+  &.ed-dark {
+    --ed-bg: hsl(0, 0%, 7%);
+    --ed-text: hsl(0, 0%, 93%);
+    --ed-muted: hsl(0, 0%, 58%);
+    --ed-faint: hsl(0, 0%, 44%);
+    --ed-line: hsl(0, 0%, 16%);
+    --ed-accent: hsl(351, 72%, 58%);
+    --ed-tile: hsl(0, 0%, 11%);
+    --ed-panel: hsla(0, 0%, 9%, 0.88);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--ed-accent);
+    }
+  }
+
+  ::selection {
+    background: var(--ed-accent);
+    color: var(--ed-bg);
+  }
+}
+
+/* ---- single centered column ---- */
+.ed-column {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.ed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px 0;
+  position: relative;
+}
+
+.ed-identity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 15px;
+
+  img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.ed-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  a {
+    font-size: 14px;
+    color: var(--ed-text);
+
+    &:hover {
+      color: var(--ed-accent);
+    }
+  }
+}
+
+.ed-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ed-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ed-text);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background: var(--ed-line);
+    color: var(--ed-accent);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* hamburger only appears on small screens */
+.ed-menu-button {
+  display: none;
+}
+
+/* dropdown panel — only ever rendered while open (React-conditional),
+   and the trigger button only exists below 640px */
+.ed-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100% - 8px);
+  right: 0;
+  min-width: 180px;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid var(--ed-line);
+  background: var(--ed-panel);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  z-index: 50;
+
+  a {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+
+    &:hover {
+      background: var(--ed-line);
+      color: var(--ed-accent);
+    }
+  }
+}
+
+/* ============================================================
+   Hero + intro
+   ============================================================ */
+.ed-hero {
+  font-family: var(--ed-serif);
+  font-weight: 400;
+  font-size: clamp(48px, 10.5vw, 92px);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  margin: 56px 0 48px;
+}
+
+.ed-intro {
+  max-width: 640px;
+
+  p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: var(--ed-text);
+  }
+
+  p.ed-thesis {
+    font-size: 18px;
+  }
+
+  a {
+    color: var(--ed-accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ============================================================
+   Section label — wide-tracked mono small caps
+   ============================================================ */
+.ed-label {
+  font-family: var(--ed-mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ed-muted);
+  margin: 88px 0 8px;
+}
+
+/* ============================================================
+   Row lists (experience, selected work, writing)
+   ============================================================ */
+.ed-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.ed-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+
+  .ed-row-body {
+    min-width: 0;
+  }
+
+  .ed-row-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ed-text);
+    transition: color 0.15s ease;
+  }
+
+  .ed-row-sub {
+    font-family: var(--ed-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ed-faint);
+    margin-top: 2px;
+  }
+
+  .ed-row-date {
+    margin-left: auto;
+    font-family: var(--ed-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ed-faint);
+    white-space: nowrap;
+    align-self: flex-start;
+    padding-top: 4px;
+  }
+
+  &:hover .ed-row-title {
+    color: var(--ed-accent);
+  }
+}
+
+/* 48px rounded monogram tile */
+.ed-tile {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--ed-tile);
+  border: 1px solid var(--ed-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ed-serif);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--ed-text);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* thin divider between major sections */
+.ed-divider {
+  border: none;
+  border-top: 1px solid var(--ed-line);
+  margin: 72px 0 0;
+}
+
+/* ============================================================
+   Recent work cards
+   ============================================================ */
+.ed-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.ed-card {
+  display: block;
+
+  .ed-card-media {
+    border-radius: 14px;
+    border: 1px solid var(--ed-line);
+    overflow: hidden;
+    background: var(--ed-tile);
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .ed-card-caption {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 2px 0;
+
+    .ed-card-title {
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .ed-card-year {
+      font-family: var(--ed-mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ed-faint);
+      white-space: nowrap;
+    }
+  }
+
+  &:hover {
+    .ed-card-title {
+      color: var(--ed-accent);
+    }
+
+    .ed-card-media img {
+      transform: scale(1.015);
+    }
+  }
+}
+
+.ed-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.ed-footer {
+  margin-top: 96px;
+  padding-top: 28px;
+  border-top: 1px solid var(--ed-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  .ed-footer-links {
+    display: flex;
+    gap: 20px;
+
+    a {
+      font-family: var(--ed-mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ed-muted);
+
+      &:hover {
+        color: var(--ed-accent);
+      }
+    }
+  }
+
+  .ed-footer-note {
+    font-family: var(--ed-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--ed-faint);
+  }
+}
+
+/* ============================================================
+   Responsive — below 640px the inline nav collapses into a
+   hamburger revealing a blurred dropdown panel
+   ============================================================ */
+@media (max-width: 640px) {
+  .ed-nav {
+    display: none;
+  }
+
+  .ed-menu-button {
+    display: inline-flex;
+  }
+
+  .ed-hero {
+    margin: 40px 0 36px;
+  }
+
+  .ed-label {
+    margin-top: 64px;
+  }
+
+  .ed-card-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ed-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

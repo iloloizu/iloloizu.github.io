@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import '../src/styles/app_layout.scss'
 import '../src/styles/_vibrant.scss'
 import '../src/styles/nova.scss'
+import '../src/styles/editorial.scss'
 import '../src/styles/_all-blogs.scss'
 import '../src/styles/_all-projects.scss'
 import '../src/styles/_contact.scss'
@@ -17,6 +18,7 @@ import AllBlogsPage from './Pages/AllBlogsPage'
 import AllProjectsPage from './Pages/AllProjectsPage'
 import LinkTree from './Pages/LinkTree'
 import PhotographyPage from './Pages/PhotographyPage'
+import EditorialHome from './Pages/EditorialHome'
 
 function HomePage() {
   return (
@@ -35,7 +37,8 @@ export default function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<EditorialHome />} />
+        <Route path="/classic" element={<HomePage />} />
         <Route path="/blogs" element={<AllBlogsPage />} />
         <Route path="/projects" element={<AllProjectsPage />} />
         <Route path="/socials" element={<LinkTree />} />
