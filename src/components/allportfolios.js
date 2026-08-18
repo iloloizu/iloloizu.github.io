@@ -7,10 +7,22 @@ import port7 from '../images/eldenringwikiapp.png'
 import port8 from '../images/Stylo.png'
 import port9 from '../images/ServePro.png'
 import port10 from '../images/port10.png'
+import fortiswealth from '../images/fortiswealth.png'
 
 const port2 = 'https://miro.medium.com/max/1400/1*ZPhW7TFH7S42jYPtRZahmA.png';
 
 const portfolios = [
+    {
+        id: 0,
+        category: "Full-Stack",
+        image: fortiswealth,
+        title: 'Fortis Wealth',
+        paragraph: "Built with HTML, CSS, Typescript, React, Node.js. A personal finance platform with monthly budgeting, transaction imports and categorization rules, net-worth tracking, savings projections, and an LLM-powered budget assistant.",
+        link1: 'https://github.com/iloloizu/budgeting-app',
+        icon1: 'Github',
+        year: '2026',
+        madeAt: 'Personal Project'
+    },
     {
         id: 1,
         category: "Front-End",

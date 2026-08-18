@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import avatar from '../images/avatar.jpeg'
+import logo from '../images/transparent-ilolo-logo.png'
+import EditorialContact from '../components/EditorialContact'
 
 // 24x24 viewbox, 1.5px stroke, currentColor — Lucide-style outline icons
 const SunIcon = () => (
@@ -35,20 +36,32 @@ const NAV_LINKS = [
   { label: 'Photography', to: '/portfolio' },
 ]
 
-export default function EditorialLayout({ children }) {
+export default function EditorialLayout({ children, wide = false }) {
   const [isDark, setIsDark] = useState(() => localStorage.getItem('ed-theme') === 'dark')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [contactOpen, setContactOpen] = useState(false)
 
   useEffect(() => {
     localStorage.setItem('ed-theme', isDark ? 'dark' : 'light')
   }, [isDark])
 
+  // nova.scss paints html/body/.App with its own light background, which
+  // peeks out at the page edges (overscroll, scrollbar gutter). While an
+  // editorial page is mounted, repaint the whole document to match.
+  useEffect(() => {
+    const bg = isDark ? 'hsl(0, 0%, 7%)' : 'hsl(0, 0%, 98%)'
+    const targets = [document.documentElement, document.body, document.querySelector('.App')].filter(Boolean)
+    const previous = targets.map((el) => el.style.background)
+    targets.forEach((el) => { el.style.background = bg })
+    return () => targets.forEach((el, i) => { el.style.background = previous[i] })
+  }, [isDark])
+
   return (
     <div className={`editorial ${isDark ? 'ed-dark' : ''}`}>
-      <div className="ed-column">
+      <div className={`ed-column ${wide ? 'ed-column--wide' : ''}`}>
         <header className="ed-header">
           <Link to="/" className="ed-identity">
-            <img src={avatar} alt="Ilolo Izu" />
+            <img src={logo} alt="Ilolo Izu logo" />
             <span>Ilolo Izu</span>
           </Link>
 
@@ -89,6 +102,7 @@ export default function EditorialLayout({ children }) {
 
         <footer className="ed-footer">
           <div className="ed-footer-links">
+            <button className="ed-footer-contact" onClick={() => setContactOpen(true)}>Contact</button>
             <a href="https://www.linkedin.com/in/ilolo-izu/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/iloloizu" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://ilolo.medium.com/" target="_blank" rel="noreferrer">Medium</a>
@@ -97,6 +111,8 @@ export default function EditorialLayout({ children }) {
           <span className="ed-footer-note">© {new Date().getFullYear()} Ilolo Izu</span>
         </footer>
       </div>
+
+      {contactOpen && <EditorialContact onClose={() => setContactOpen(false)} />}
     </div>
   )
 }

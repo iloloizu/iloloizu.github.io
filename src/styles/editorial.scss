@@ -63,6 +63,28 @@
   padding: 0 24px 64px;
 }
 
+/* wider variant for the photography grid */
+.ed-column--wide {
+  max-width: 1200px;
+}
+
+/* ---- interior page heading ---- */
+.ed-page-title {
+  font-family: var(--ed-serif);
+  font-weight: 400;
+  font-size: clamp(36px, 6.5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: 40px 0 16px;
+}
+
+.ed-page-intro {
+  max-width: 620px;
+  color: var(--ed-muted);
+  font-size: 15px;
+  margin: 0 0 24px;
+}
+
 /* ============================================================
    Header
    ============================================================ */
@@ -83,12 +105,17 @@
   font-size: 15px;
 
   img {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: contain;
     display: block;
   }
+}
+
+/* the mark is pure black/white — invert it wholesale in dark mode */
+.ed-dark .ed-identity img {
+  filter: invert(1);
 }
 
 .ed-nav {
@@ -269,6 +296,76 @@
   }
 }
 
+/* indented promotion timeline under a company row (LinkedIn-style) */
+.ed-subroles {
+  margin: -6px 0 10px 64px; /* 48px tile + 16px gap — aligns with the row body */
+  padding-left: 20px;
+  border-left: 1px solid var(--ed-line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .ed-subrole {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+
+    .ed-subrole-title {
+      font-family: var(--ed-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ed-muted);
+    }
+
+    .ed-row-date {
+      margin-left: auto;
+      font-family: var(--ed-mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ed-faint);
+      white-space: nowrap;
+    }
+  }
+}
+
+/* logo tile variants — mirror how LinkedIn renders company marks:
+   full-bleed for logos that carry their own background, padded white
+   tile for transparent glyphs (stays white in dark mode, like LinkedIn) */
+.ed-tile.ed-tile--cover {
+  border: none;
+
+  img {
+    border-radius: 12px;
+  }
+}
+
+.ed-tile.ed-tile--pad {
+  background: #fff;
+  padding: 7px;
+  box-sizing: border-box;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.ed-dark .ed-tile--pad {
+  border-color: var(--ed-line);
+}
+
+/* Vanguard ships no favicon above 32px, so its tile is rebuilt in CSS:
+   brand-red square, white serif V — crisp at any pixel density */
+.ed-tile.ed-tile--vanguard {
+  background: #c10e21;
+  border: none;
+  color: #fff;
+  font-family: var(--ed-serif);
+  font-weight: 500;
+  font-size: 26px;
+}
+
 /* 48px rounded monogram tile */
 .ed-tile {
   flex-shrink: 0;
@@ -313,18 +410,25 @@
 .ed-card {
   display: block;
 
+  /* uniform card size regardless of source image dimensions */
   .ed-card-media {
     border-radius: 14px;
     border: 1px solid var(--ed-line);
     overflow: hidden;
     background: var(--ed-tile);
+    aspect-ratio: 4 / 3;
 
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
       transition: transform 0.3s ease;
     }
+  }
+
+  &.ed-card--featured .ed-card-media {
+    aspect-ratio: 16 / 9;
   }
 
   .ed-card-caption {
@@ -367,6 +471,163 @@
   gap: 32px;
 }
 
+/* small mono link chips inside a row (e.g. project Website / GitHub) */
+.ed-row-links {
+  display: inline-flex;
+  gap: 12px;
+  margin-left: 10px;
+
+  a {
+    font-family: var(--ed-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ed-accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ============================================================
+   Contact modal
+   ============================================================ */
+.ed-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.ed-modal {
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--ed-bg);
+  border: 1px solid var(--ed-line);
+  border-radius: 18px;
+  padding: 28px;
+  position: relative;
+
+  .ed-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .ed-modal-title {
+    font-family: var(--ed-serif);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0 0 8px;
+  }
+
+  .ed-modal-blurb {
+    color: var(--ed-muted);
+    font-size: 14px;
+    margin: 0 0 20px;
+
+    a {
+      color: var(--ed-accent);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.ed-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  label {
+    display: block;
+    font-family: var(--ed-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ed-muted);
+    margin-bottom: 6px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--ed-tile);
+    border: 1px solid var(--ed-line);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-family: var(--ed-sans);
+    font-size: 14px;
+    color: var(--ed-text);
+    resize: vertical;
+    transition: border-color 0.15s ease;
+
+    &::placeholder {
+      color: var(--ed-faint);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--ed-accent);
+    }
+  }
+
+  .ed-submit {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 10px 20px;
+    border: 1px solid var(--ed-text);
+    border-radius: 999px;
+    background: var(--ed-text);
+    color: var(--ed-bg);
+    font-family: var(--ed-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+
+    &:hover {
+      background: var(--ed-accent);
+      border-color: var(--ed-accent);
+      color: #fff;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}
+
+.ed-form-status {
+  font-family: var(--ed-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin: 4px 0 0;
+
+  &.ok {
+    color: var(--ed-accent);
+  }
+
+  &.err {
+    color: var(--ed-accent);
+  }
+}
+
 /* ============================================================
    Footer
    ============================================================ */
@@ -381,9 +642,11 @@
 
   .ed-footer-links {
     display: flex;
+    align-items: center;
     gap: 20px;
 
-    a {
+    a,
+    .ed-footer-contact {
       font-family: var(--ed-mono);
       font-size: 12px;
       letter-spacing: 0.1em;
@@ -393,6 +656,13 @@
       &:hover {
         color: var(--ed-accent);
       }
+    }
+
+    .ed-footer-contact {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
     }
   }
 

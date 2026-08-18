@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import EditorialLayout from '../layout/EditorialLayout';
 
 // Photography images from Adobe Lightroom
 const images = [
@@ -122,16 +122,12 @@ function PhotographyPage() {
   };
 
   return (
-    <div className="photography-page">
-      <div className="photography-header">
-        <Link to="/" className="back-button">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-          Back to Home
-        </Link>
-        <h1>Photos by Ilolo Izu</h1>
-      </div>
+    <EditorialLayout wide>
+      <h2 className="ed-label">Ongoing</h2>
+      <h1 className="ed-page-title">Photography</h1>
+      <p className="ed-page-intro">
+        Travel, street, and sport — shot on the road and at the track.
+      </p>
 
       <div className="photography-grid">
         {images.length > 0 ? (
@@ -174,7 +170,7 @@ function PhotographyPage() {
           </button>
         </div>
       )}
-    </div>
+    </EditorialLayout>
   );
 }
 

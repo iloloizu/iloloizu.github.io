@@ -1,132 +1,57 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import portfolios from '../components/allportfolios';
+import React from 'react'
+import EditorialLayout from '../layout/EditorialLayout'
+import portfolios from '../components/allportfolios'
 
 function AllProjectsPage() {
-  // Sort projects by year (descending order, newest first)
-  const sortedProjects = [...portfolios].sort((a, b) => b.year.localeCompare(a.year));
-
-  // Extract technologies from project descriptions
-  const extractTechnologies = (paragraph) => {
-    const techMap = {
-      'HTML': 'HTML',
-      'CSS': 'CSS', 
-      'Javascript': 'JavaScript',
-      'ReactJS': 'React',
-      'React': 'React',
-      'Ruby on Rails': 'Ruby on Rails',
-      'Three.js': 'Three.js',
-      'Bootstrap': 'Bootstrap',
-      'Redux': 'Redux',
-      'Material UI': 'Material UI',
-      'Postgresql': 'PostgreSQL',
-      'Ruby': 'Ruby',
-      'SQLite': 'SQLite',
-      'JSON': 'JSON',
-      'React Native': 'React Native',
-      'Supabase': 'Supabase',
-      'Typescript': 'Typescript',
-    };
-    
-    const foundTechs = [];
-    Object.keys(techMap).forEach(tech => {
-      if (paragraph.includes(tech)) {
-        foundTechs.push(techMap[tech]);
-      }
-    });
-    return foundTechs;
-  };
+  const sortedProjects = [...portfolios].sort((a, b) => b.year.localeCompare(a.year))
 
   return (
-    <div className="all-projects-page">
-      <div className="all-projects-header">
-        <Link to="/" className="back-button">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-          Back to Home
-        </Link>
-        
-        <h1 className="all-projects-title">All Projects</h1>
-        <p className="all-projects-subtitle">
-          A collection of my software development projects showcasing full-stack development, 
-          front-end design, and backend architecture skills.
-        </p>
-      </div>
+    <EditorialLayout>
+      <h2 className="ed-label">All Work</h2>
+      <h1 className="ed-page-title">Projects</h1>
+      <p className="ed-page-intro">
+        Software I&rsquo;ve built across full-stack development, front-end design, and
+        backend architecture — from consulting engagements to personal experiments.
+      </p>
 
-      <div className="all-projects-content">
-        <div className="projects-table">
-          <div className="table-header">
-            <div className="table-cell">Year</div>
-            <div className="table-cell">Project</div>
-            <div className="table-cell">Made at</div>
-            <div className="table-cell">Built with</div>
-            <div className="table-cell">Link</div>
-          </div>
-          
-          {sortedProjects.map((project) => {
-            const technologies = extractTechnologies(project.paragraph);
-            return (
-              <div className="table-row" key={project.id}>
-                <div className="table-cell year-cell">
-                  {project.year}
-                </div>
-                <div className="table-cell project-cell">
-                  <div className="project-info">
-                    <img src={project.image} alt={project.title} className="project-image" />
-                    <div className="project-details">
-                      <h3 className="project-title">{project.title}</h3>
-                      <p className="project-category">{project.category}</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="table-cell made-at-cell">
+      <div className="ed-rows">
+        {sortedProjects.map((project) => {
+          const RowContent = (
+            <>
+              <div className="ed-tile ed-tile--cover" aria-hidden="true">
+                <img src={project.image} alt="" />
+              </div>
+              <div className="ed-row-body">
+                <div className="ed-row-title">{project.title}</div>
+                <div className="ed-row-sub">
                   {project.madeAt}
-                </div>
-                <div className="table-cell built-with-cell">
-                  <div className="tech-badges">
-                    {technologies.map((tech, index) => (
-                      <span key={index} className="tech-badge">{tech}</span>
-                    ))}
-                  </div>
-                </div>
-                <div className="table-cell link-cell">
-                  <div className="project-links">
-                    {project.link1 && (
-                      <a 
-                        href={project.link1} 
-                        target="_blank" 
-                        rel="noreferrer"
-                        className="project-link"
-                      >
-                        {project.icon1}
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </a>
-                    )}
-                    {project.link2 && (
-                      <a 
-                        href={project.link2} 
-                        target="_blank" 
-                        rel="noreferrer"
-                        className="project-link"
-                      >
-                        {project.icon2}
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </a>
-                    )}
-                  </div>
+                  {project.link1 && (
+                    <span className="ed-row-links">
+                      <a href={project.link1} target="_blank" rel="noreferrer">{project.icon1}</a>
+                      {project.link2 && (
+                        <a href={project.link2} target="_blank" rel="noreferrer">{project.icon2}</a>
+                      )}
+                    </span>
+                  )}
                 </div>
               </div>
-            );
-          })}
-        </div>
+              <div className="ed-row-date">{project.year}</div>
+            </>
+          )
+
+          return project.link1 ? (
+            <a key={project.id} className="ed-row" href={project.link1} target="_blank" rel="noreferrer">
+              {RowContent}
+            </a>
+          ) : (
+            <div key={project.id} className="ed-row">
+              {RowContent}
+            </div>
+          )
+        })}
       </div>
-    </div>
-  );
+    </EditorialLayout>
+  )
 }
 
-export default AllProjectsPage;
+export default AllProjectsPage

@@ -3,33 +3,41 @@ import { Link } from 'react-router-dom'
 import EditorialLayout from '../layout/EditorialLayout'
 import portfolios from '../components/allportfolios'
 import allBlogs from '../components/allBlogs'
+import lawtradesLogo from '../images/logos/lawtrades.png'
+import resiliaLogo from '../images/logos/resilia.png'
+import ripplematchLogo from '../images/logos/ripplematch.png'
+import jackLogo from '../images/logos/jackinthebox.png'
 
+// titles and dates mirror LinkedIn
 const experience = [
-  { company: 'Lawtrades', role: 'Lead AI Product Engineer', dates: '2026—Now', url: 'https://www.lawtrades.com/' },
-  { company: 'Vanguard', role: 'Application Developer I & II', dates: '2023—2025', url: 'https://investor.vanguard.com/' },
-  { company: 'Resilia', role: 'Full-Stack Software Engineer I', dates: '2023', url: 'https://www.resilia.com/' },
-  { company: 'RippleMatch', role: 'Full-Stack Software Engineer', dates: '2022', url: 'https://ripplematch.com/' },
-  { company: 'Izu Group Restaurants', role: 'Internal Auditor & QA', dates: '2015—Now', url: 'https://www.jackinthebox.com/' },
+  { company: 'Lawtrades', role: 'Lead AI Product Engineer', dates: '2026—Now', url: 'https://www.lawtrades.com/', logo: lawtradesLogo, logoStyle: 'pad' },
+  {
+    company: 'Vanguard',
+    dates: '2023—2026',
+    url: 'https://investor.vanguard.com/',
+    vanguardTile: true,
+    roles: [
+      { title: 'Software Engineer II', dates: '2025—2026' },
+      { title: 'Software Engineer I', dates: '2023—2025' },
+    ],
+  },
+  { company: 'Resilia', role: 'Software Engineer', dates: '2023', url: 'https://www.resilia.com/', logo: resiliaLogo, logoStyle: 'cover' },
+  { company: 'RippleMatch', role: 'Associate Software Engineer', dates: '2022', url: 'https://ripplematch.com/', logo: ripplematchLogo, logoStyle: 'cover' },
+  { company: 'Izu Group Restaurants', role: 'Product Owner · Internal Auditing', dates: '2017—Now', url: 'https://www.jackinthebox.com/', logo: jackLogo, logoStyle: 'cover' },
 ]
 
-const selectedWork = [
-  { title: 'SkillTrack', sub: 'React, TypeScript', year: '2025', href: 'https://iloloizu.github.io/HU-interview/' },
-  { title: 'Stylo', sub: 'React Native, Supabase', year: '2025', href: 'https://youtube.com/shorts/9dKA-wHPzV4' },
-  { title: 'ServePro', sub: 'Angular, Node, GraphQL', year: '2025' },
-  { title: 'Photography', sub: 'Travel, Street, Sport', year: 'Ongoing', to: '/portfolio' },
-]
-
-function Row({ title, sub, date, tile }) {
-  return (
-    <>
-      <div className="ed-tile" aria-hidden="true">{tile || title.charAt(0)}</div>
-      <div className="ed-row-body">
-        <div className="ed-row-title">{title}</div>
-        {sub && <div className="ed-row-sub">{sub}</div>}
+function Tile({ job }) {
+  if (job.vanguardTile) {
+    return <div className="ed-tile ed-tile--vanguard" aria-hidden="true">V</div>
+  }
+  if (job.logo) {
+    return (
+      <div className={`ed-tile ed-tile--${job.logoStyle}`} aria-hidden="true">
+        <img src={job.logo} alt="" />
       </div>
-      <div className="ed-row-date">{date}</div>
-    </>
-  )
+    )
+  }
+  return <div className="ed-tile" aria-hidden="true">{job.company.charAt(0)}</div>
 }
 
 export default function EditorialHome() {
@@ -39,7 +47,7 @@ export default function EditorialHome() {
 
   return (
     <EditorialLayout>
-      <h1 className="ed-hero">AI Engineer,<br />Maker, Sprinter</h1>
+      <h1 className="ed-hero">AI Engineer, Athlete<br />&amp; MBA Candidate</h1>
 
       <div className="ed-intro">
         <p className="ed-thesis">
@@ -60,26 +68,26 @@ export default function EditorialHome() {
       <h2 className="ed-label">Experience</h2>
       <div className="ed-rows">
         {experience.map((job) => (
-          <a key={job.company + job.role} className="ed-row" href={job.url} target="_blank" rel="noreferrer">
-            <Row title={job.company} sub={job.role} date={job.dates} />
-          </a>
-        ))}
-      </div>
-
-      <hr className="ed-divider" />
-
-      <h2 className="ed-label">Selected Work</h2>
-      <div className="ed-rows">
-        {selectedWork.map((work) => (
-          work.to ? (
-            <Link key={work.title} className="ed-row" to={work.to}>
-              <Row title={work.title} sub={work.sub} date={work.year} />
-            </Link>
-          ) : (
-            <a key={work.title} className="ed-row" href={work.href} target={work.href ? '_blank' : undefined} rel="noreferrer">
-              <Row title={work.title} sub={work.sub} date={work.year} />
+          <React.Fragment key={job.company + (job.role || '')}>
+            <a className="ed-row" href={job.url} target="_blank" rel="noreferrer">
+              <Tile job={job} />
+              <div className="ed-row-body">
+                <div className="ed-row-title">{job.company}</div>
+                {job.role && <div className="ed-row-sub">{job.role}</div>}
+              </div>
+              <div className="ed-row-date">{job.dates}</div>
             </a>
-          )
+            {job.roles && (
+              <div className="ed-subroles">
+                {job.roles.map((r) => (
+                  <div className="ed-subrole" key={r.title}>
+                    <span className="ed-subrole-title">{r.title}</span>
+                    <span className="ed-row-date">{r.dates}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
 
@@ -88,7 +96,7 @@ export default function EditorialHome() {
       <h2 className="ed-label">Recent Work</h2>
       <div className="ed-cards">
         {featured && (
-          <Link className="ed-card" to="/projects">
+          <Link className="ed-card ed-card--featured" to="/projects">
             <div className="ed-card-media">
               <img src={featured.image} alt={featured.title} />
             </div>
@@ -111,6 +119,11 @@ export default function EditorialHome() {
             </Link>
           ))}
         </div>
+        <Link className="ed-row" to="/projects">
+          <div className="ed-row-body">
+            <div className="ed-row-title">View all work →</div>
+          </div>
+        </Link>
       </div>
 
       <hr className="ed-divider" />
