@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import '../src/styles/app_layout.scss'
 import '../src/styles/_vibrant.scss'
 import '../src/styles/nova.scss'
@@ -33,9 +33,21 @@ function HomePage() {
   );
 }
 
+// The page scrolls inside .App, which keeps its position across route
+// changes — reset to the top whenever the route changes
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    document.querySelector('.App')?.scrollTo(0, 0)
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 export default function App() {
   return (
     <div className='App'>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<EditorialHome />} />
         <Route path="/classic" element={<HomePage />} />
