@@ -7,7 +7,18 @@ function ExperiencePage() {
   const experiences = [
     {
       id: 1,
-      date: "Jan 2025 — Present",
+      date: "Jan 2026 — Present",
+      title: "Lead AI Product Engineer | Marketplace",
+      company: "Lawtrades",
+      companyUrl: "https://www.lawtrades.com/",
+      description: "Lawtrades is the legal talent marketplace connecting top companies with elite attorneys and legal professionals on demand.\n\nProduct Strategy and Development Lead for an AI and agent-powered legal experience on a leading attorney marketplace, expanding platform capabilities and driving user engagement. Forward Deployed Engineering work across the stack — interviewing users, planning product from inception to rollout, and building, using, and training AI. AI. AI. ...and more AI.",
+      image: null,
+      achievements: null,
+      technologies: ["React", "Node.js", "Sails.js", "Python", "PostgreSQL", "Claude API", "AI Agents", "Google Cloud"]
+    },
+    {
+      id: 2,
+      date: "Jan 2025 — Dec 2025",
       title: "Application Developer 2",
       company: "Vanguard",
       companyUrl: "https://investor.vanguard.com/",
@@ -17,7 +28,7 @@ function ExperiencePage() {
       technologies: ["React", "Node.js", "Angular", "RxJS", "NgRx", "AWS Lambda", "AWS S3", "AWS Glue", "Jira", "Appian"]
     },
     {
-      id: 2,
+      id: 3,
       date: "Aug 2023 — Dec 2024",
       title: "Application Developer 1",
       company: "Vanguard",
@@ -28,7 +39,7 @@ function ExperiencePage() {
       technologies: ["Angular", "RxJS", "NgRx", "Fastify", "AWS", "PagerDuty"]
     },
     {
-      id: 3,
+      id: 4,
       date: "2023",
       title: "Full-Stack Software Engineer I",
       company: "Resilia",
@@ -39,7 +50,7 @@ function ExperiencePage() {
       technologies: ["TypeScript", "Node.js", "React", "GraphQL", "Auth0", "Stripe", "AWS"]
     },
     {
-      id: 4,
+      id: 5,
       date: "2022",
       title: "Full-Stack Software Engineer",
       company: "RippleMatch",
@@ -50,7 +61,7 @@ function ExperiencePage() {
       technologies: ["Vue.js", "Python", "SQLAlchemy", "Jest"]
     },
     {
-      id: 5,
+      id: 6,
       date: "2015 — Present",
       title: "Internal Auditor & Quality Analysis",
       company: "Izu Group Restaurants",
@@ -119,7 +130,7 @@ function ExperiencePage() {
       ))}
       
       <div>
-        <a href='https://drive.google.com/file/d/1BYuFc9PkwqqIALw3O-oW50Vg7QloCtye/view?usp=sharing' target="_blank" rel="noreferrer" className="theme-toggle">
+        <a href={`${process.env.PUBLIC_URL}/Ilolo_Izu_Resume_2026.pdf`} target="_blank" rel="noreferrer" className="theme-toggle">
           Download Résumé
         </a>
       </div>

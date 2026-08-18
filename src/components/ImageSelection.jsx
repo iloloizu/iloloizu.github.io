@@ -7,7 +7,7 @@ function ImageSelection() {
         <div>
             <div className="about-info">
                 <p className="about-text">
-                I’m Ilolo Izu (e-lo-lo e-zu), a Product-oriented Full-Stack Software Engineer from Houston, TX—currently building and optimizing Auto-Invest tools at Vanguard. Former All-American Track & Field athlete turned technologist, blending technical depth with sharp communication, empathy, and adaptability. My journey from healthcare to software engineering fuels a passion for solving real user problems and building intuitive, high-impact solutions. Outside of work, I’m all about fitness, <a 
+                I’m Ilolo Izu (e-lo-lo e-zu), a Product-oriented Full-Stack Software Engineer from Houston, TX—currently leading AI product engineering at Lawtrades, building an AI and agent-powered legal experience for a leading attorney marketplace. Former All-American Track & Field athlete turned technologist, blending technical depth with sharp communication, empathy, and adaptability. My journey from healthcare to software engineering fuels a passion for solving real user problems and building intuitive, high-impact solutions. Outside of work, I’m all about fitness, <a 
     href="https://www.iloloizu.com/#/portfolio" 
     className="portfolio-link"
     target="_blank"
@@ -31,7 +31,7 @@ function ImageSelection() {
 photography
 </a>, traveling, cooking, and creating genuine connections wherever I go.
                 </p> 
-                <br/> <a href='https://drive.google.com/file/d/1BYuFc9PkwqqIALw3O-oW50Vg7QloCtye/view?usp=sharing' target="_blank" rel="noreferrer">
+                <br/> <a href={`${process.env.PUBLIC_URL}/Ilolo_Izu_Resume_2026.pdf`} target="_blank" rel="noreferrer">
                 <button className="theme-toggle">Download Résumé</button></a>
                 <br/>
             </div>

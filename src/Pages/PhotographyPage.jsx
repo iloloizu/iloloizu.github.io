@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 // Photography images from Adobe Lightroom
@@ -50,11 +50,57 @@ const images = [
 
 ];
 
+// Defers the image download until the tile is within 600px of the viewport.
+// Chrome's native loading="lazy" threshold is too generous for a grid this
+// size (it prefetches everything), so we gate the src ourselves.
+function LazyPhoto({ src, alt, eager, onClick }) {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(eager);
+
+  useEffect(() => {
+    if (visible || !ref.current) return;
+    if (!('IntersectionObserver' in window)) { setVisible(true); return; }
+    // The page scrolls inside a container (.App), not the window — the
+    // observer must use that scroller as root or the preload margin is
+    // clipped away and images would only start loading once fully visible
+    let root = ref.current.parentElement;
+    while (root && !/(auto|scroll)/.test(getComputedStyle(root).overflowY)) {
+      root = root.parentElement;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { root: root || null, rootMargin: '600px 0px' }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [visible]);
+
+  return (
+    <div ref={ref} className="photo-item" onClick={onClick}>
+      {visible ? (
+        <img src={src} alt={alt} decoding="async" fetchPriority={eager ? 'high' : 'auto'} />
+      ) : (
+        <div style={{ height: 300, borderRadius: 4, background: 'rgba(127, 127, 127, 0.08)' }} />
+      )}
+    </div>
+  );
+}
+
 function PhotographyPage() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  console.log('PhotographyPage rendering, images.length:', images.length);
+
+  // Warm the browser cache for the neighboring photos so lightbox arrows feel instant
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    [(currentImageIndex + 1) % images.length, (currentImageIndex - 1 + images.length) % images.length]
+      .forEach((i) => { new Image().src = images[i].src; });
+  }, [lightboxOpen, currentImageIndex]);
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -90,9 +136,13 @@ function PhotographyPage() {
       <div className="photography-grid">
         {images.length > 0 ? (
           images.map((image, index) => (
-            <div key={image.id} className="photo-item" onClick={() => openLightbox(index)}>
-              <img src={image.src} alt={image.alt} />
-            </div>
+            <LazyPhoto
+              key={image.id}
+              src={image.src}
+              alt={image.alt}
+              eager={index < 6}
+              onClick={() => openLightbox(index)}
+            />
           ))
         ) : (
           <p className="no-photos">No photos to display yet.</p>
