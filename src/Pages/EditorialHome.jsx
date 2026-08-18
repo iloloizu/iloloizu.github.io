@@ -47,7 +47,7 @@ export default function EditorialHome() {
 
   return (
     <EditorialLayout>
-      <h1 className="ed-hero">AI Engineer, Athlete<br />&amp; MBA Candidate</h1>
+      <h1 className="ed-hero">AI Engineer, Athlete,<br />MBA Candidate</h1>
 
       <div className="ed-intro">
         <p className="ed-thesis">
