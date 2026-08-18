@@ -56,16 +56,45 @@
   }
 }
 
-/* ---- single centered column ---- */
+/* ---- single centered column ----
+   header and footer always stay at 768px so the nav and theme toggle
+   never shift between pages; only the main content column may widen */
 .ed-column {
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 24px 64px;
+  padding: 0 24px;
 }
 
-/* wider variant for the photography grid */
-.ed-column--wide {
+.ed-column--foot {
+  padding-bottom: 64px;
+}
+
+/* wider variant for the photography grid — compound selector so it
+   always outranks the base .ed-column max-width */
+.ed-column.ed-column--wide {
   max-width: 1200px;
+}
+
+/* smooth width change when navigating between narrow and wide pages —
+   desktop only; below this the columns are viewport-bound anyway */
+@media (min-width: 900px) {
+  .ed-anim-expand {
+    animation: ed-expand 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .ed-anim-contract {
+    animation: ed-contract 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
+
+@keyframes ed-expand {
+  from { max-width: 768px; }
+  to { max-width: 1200px; }
+}
+
+@keyframes ed-contract {
+  from { max-width: 1200px; }
+  to { max-width: 768px; }
 }
 
 /* ---- interior page heading ---- */

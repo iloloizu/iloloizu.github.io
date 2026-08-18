@@ -29,6 +29,11 @@ const CloseIcon = () => (
   </svg>
 )
 
+// remembers the previous page's column width across route changes so the
+// next page knows whether to animate its width (module scope survives
+// remounts within the SPA session)
+let lastWide = false
+
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'Projects', to: '/projects' },
@@ -40,6 +45,12 @@ export default function EditorialLayout({ children, wide = false }) {
   const [isDark, setIsDark] = useState(() => localStorage.getItem('ed-theme') === 'dark')
   const [menuOpen, setMenuOpen] = useState(false)
   const [contactOpen, setContactOpen] = useState(false)
+  // animate the content column when its width differs from the previous page
+  const [widthAnim] = useState(() => (lastWide === wide ? '' : wide ? 'ed-anim-expand' : 'ed-anim-contract'))
+
+  useEffect(() => {
+    lastWide = wide
+  }, [wide])
 
   useEffect(() => {
     localStorage.setItem('ed-theme', isDark ? 'dark' : 'light')
@@ -58,7 +69,7 @@ export default function EditorialLayout({ children, wide = false }) {
 
   return (
     <div className={`editorial ${isDark ? 'ed-dark' : ''}`}>
-      <div className={`ed-column ${wide ? 'ed-column--wide' : ''}`}>
+      <div className="ed-column">
         <header className="ed-header">
           <Link to="/" className="ed-identity">
             <img src={logo} alt="Ilolo Izu logo" />
@@ -97,9 +108,13 @@ export default function EditorialLayout({ children, wide = false }) {
             </nav>
           )}
         </header>
+      </div>
 
-        <main>{children}</main>
+      <main className={`ed-column ed-column--main ${wide ? 'ed-column--wide' : ''} ${widthAnim}`}>
+        {children}
+      </main>
 
+      <div className="ed-column ed-column--foot">
         <footer className="ed-footer">
           <div className="ed-footer-links">
             <button className="ed-footer-contact" onClick={() => setContactOpen(true)}>Contact</button>

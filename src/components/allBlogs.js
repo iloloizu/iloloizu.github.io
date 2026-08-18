@@ -35,6 +35,16 @@ const blogs = [
 
     },
     {
+        id: 24,
+        image: 'https://www.vanguardjobs.com/wp-content/uploads/sites/3823/2025/03/Vanguard_Web_Blog_BlogImage_IloloIzu_3_02_19_2025.jpg',
+        title: 'From AfroTech to Vanguard: A Full Circle Journey',
+        link: 'https://www.vanguardjobs.com/career-blog/2025/02/26/afrotech-to-vanguard/',
+        date : '26',
+        month: 'Feb',
+        year: '2025'
+
+    },
+    {
         id: 22,
         image: blog22,
         title: 'Rethinking Reactivity in Angular: A Deep Dive into Angular Signals',
@@ -42,6 +52,16 @@ const blogs = [
         date : '25',
         month: 'Oct',
         year: '2024'
+
+    },
+    {
+        id: 25,
+        image: 'https://cdn.sanity.io/images/3o6344mn/production/49d54b159b85babf369b42531955278714606bf0-612x408.webp',
+        title: 'Ilolo Izu: Medicine to Software Engineering — Flatiron School Feature',
+        link: 'https://flatironschool.com/blog/ilolo-izu',
+        date : '1',
+        month: 'Sep',
+        year: '2023'
 
     },
     {
