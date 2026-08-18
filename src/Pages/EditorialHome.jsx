@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import EditorialLayout from '../layout/EditorialLayout'
 import portfolios from '../components/allportfolios'
 import allBlogs from '../components/allBlogs'
+import EdDoodle from '../components/EdDoodle'
 import lawtradesLogo from '../images/logos/lawtrades.png'
 import resiliaLogo from '../images/logos/resilia.png'
 import ripplematchLogo from '../images/logos/ripplematch.png'
 import jackLogo from '../images/logos/jackinthebox.png'
-import headshot from '../images/headshot_bw.jpg'
 
 // titles and dates mirror LinkedIn
 const experience = [
@@ -51,21 +51,9 @@ export default function EditorialHome() {
       <h1 className="ed-hero">AI Engineer, Athlete,<br />MBA Candidate</h1>
 
       <div className="ed-intro">
-        <div className="ed-intro-lead">
-          <img className="ed-headshot" src={headshot} alt="Ilolo Izu" />
-          <p className="ed-thesis">
-            Great products come from teams with empathy and pace — people who understand
-            real users deeply, ship quickly, and refine without ego.
-          </p>
-        </div>
-        <p>
-          I&rsquo;m Ilolo Izu (e&#8209;lo&#8209;lo e&#8209;zu), a product-oriented engineer from Houston, TX —
-          currently leading AI product engineering at Lawtrades, building an AI and
-          agent-powered legal experience for a leading attorney marketplace. Former
-          All-American track &amp; field athlete turned technologist; my path from
-          healthcare to software fuels a passion for solving real user problems.
-          Outside of work I&rsquo;m all about fitness, <Link to="/portfolio">photography</Link>,
-          traveling, cooking, and creating genuine connections wherever I go.
+        <p className="ed-thesis">
+          Great products come from teams with empathy and pace — people who understand
+          real users deeply, ship quickly, and refine without ego.
         </p>
       </div>
 
@@ -94,6 +82,25 @@ export default function EditorialHome() {
           </React.Fragment>
         ))}
       </div>
+
+      <hr className="ed-divider" />
+
+      <section className="ed-interlude">
+        <div className="ed-interlude-text">
+          <h2 className="ed-interlude-title">I love the reps</h2>
+          <p>
+            Repetition is how I learn — on the track and in the terminal. Lately the
+            reps have looked like Fortis Wealth, a personal finance platform with an
+            LLM budget assistant; Stylo, a mobile marketplace for stylists; consulting
+            builds like ServePro; and a steady stream of blog posts and photographs
+            along the way.
+          </p>
+        </div>
+        <figure className="ed-interlude-doodle">
+          <EdDoodle />
+          <figcaption className="ed-doodle-caption">The Training Plan</figcaption>
+        </figure>
+      </section>
 
       <hr className="ed-divider" />
 

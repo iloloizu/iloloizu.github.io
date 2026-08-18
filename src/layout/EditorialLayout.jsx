@@ -36,6 +36,7 @@ let lastWide = false
 
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
+  { label: 'About', to: '/about' },
   { label: 'Projects', to: '/projects' },
   { label: 'Blogs', to: '/blogs' },
   { label: 'Photography', to: '/portfolio' },

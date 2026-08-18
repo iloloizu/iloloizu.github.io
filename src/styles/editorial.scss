@@ -300,6 +300,41 @@
     flex-shrink: 0;
     display: block;
   }
+}
+
+/* ============================================================
+   About page — headshot beside the bio
+   ============================================================ */
+.ed-about {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 16px;
+  max-width: 720px;
+
+  .ed-headshot--about {
+    width: 240px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .ed-about-body {
+    p {
+      margin: 0 0 18px;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--ed-accent);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
   a {
     color: var(--ed-accent);
@@ -473,6 +508,70 @@
   border: none;
   border-top: 1px solid var(--ed-line);
   margin: 72px 0 0;
+}
+
+/* ============================================================
+   Interlude — serif blurb beside the interactive doodle
+   ============================================================ */
+.ed-interlude {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 72px;
+
+  .ed-interlude-text {
+    flex: 1;
+    min-width: 0;
+
+    .ed-interlude-title {
+      font-family: var(--ed-serif);
+      font-weight: 400;
+      font-size: clamp(28px, 4.5vw, 40px);
+      letter-spacing: -0.01em;
+      margin: 0 0 18px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  .ed-interlude-doodle {
+    flex-shrink: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    .ed-doodle-canvas {
+      width: 300px;
+      height: 320px;
+      cursor: crosshair;
+      touch-action: pan-y;
+    }
+
+    .ed-doodle-caption {
+      font-family: var(--ed-mono);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ed-muted);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .ed-interlude {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+
+    .ed-interlude-doodle {
+      align-self: center;
+    }
+  }
 }
 
 /* ============================================================
@@ -772,6 +871,11 @@
   .ed-intro .ed-intro-lead {
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+  }
+
+  .ed-about {
+    flex-direction: column;
     gap: 20px;
   }
 

@@ -19,6 +19,7 @@ import AllProjectsPage from './Pages/AllProjectsPage'
 import LinkTree from './Pages/LinkTree'
 import PhotographyPage from './Pages/PhotographyPage'
 import EditorialHome from './Pages/EditorialHome'
+import EditorialAbout from './Pages/EditorialAbout'
 
 function HomePage() {
   return (
@@ -50,6 +51,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<EditorialHome />} />
+        <Route path="/about" element={<EditorialAbout />} />
         <Route path="/classic" element={<HomePage />} />
         <Route path="/blogs" element={<AllBlogsPage />} />
         <Route path="/projects" element={<AllProjectsPage />} />
