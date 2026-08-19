@@ -23,7 +23,7 @@ function VideosPage() {
             <div className="ed-row-body">
               <div className="ed-row-title">{v.title}</div>
             </div>
-            <div className="ed-row-date">↗</div>
+            <div className="ed-row-date">{v.month} {v.year}</div>
           </a>
         ))}
       </div>

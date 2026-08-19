@@ -315,6 +315,28 @@
 /* ============================================================
    About page — headshot beside the bio
    ============================================================ */
+/* labeled sections under the intro row, matching the page's text column */
+.ed-about-sections {
+  max-width: 720px;
+
+  .ed-label {
+    margin-top: 52px;
+  }
+
+  p {
+    margin: 0 0 18px;
+    font-size: 16px;
+  }
+
+  a {
+    color: var(--ed-accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .ed-about {
   display: flex;
   align-items: center;
