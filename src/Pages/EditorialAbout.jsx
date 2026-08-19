@@ -9,7 +9,7 @@ export default function EditorialAbout() {
     <EditorialLayout>
       <EdBack />
       <h2 className="ed-label">About</h2>
-      <h1 className="ed-page-title">A little about me</h1>
+      <h1 className="ed-page-title">Who wears the mask?</h1>
 
       <div className="ed-about">
         <img className="ed-headshot ed-headshot--about" src={headshot} alt="Ilolo Izu" />
@@ -63,10 +63,10 @@ export default function EditorialAbout() {
 
         <h3 className="ed-label">Away from the desk</h3>
         <p>
-          I&rsquo;m still training (marathons and whatever else keeps me honest), I
+          I&rsquo;m still training (marathons, hyrox, and whatever else keeps me athletic), I
           shoot <Link to="/portfolio">photography</Link>, I travel as often as the calendar
           allows, and I cook for more people than my apartment can comfortably hold. Most of
-          the best things in my life have come from being around good people, so I try to
+          the best things in my life have come from being around good people—especially my fiancée, so I try to
           keep doing that.
         </p>
       </div>

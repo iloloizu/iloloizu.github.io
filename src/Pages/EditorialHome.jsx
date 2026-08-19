@@ -52,14 +52,17 @@ export default function EditorialHome() {
 
       <div className="ed-intro">
         <p className="ed-thesis">
-          My college coach used to end every practice the same way: don't let the day get away.
-  He meant it about workouts, but it's held up for everything since. I build AI products
-  now (mostly things that take a tedious human process and quietly do it faster), and the
-  job turns out to be the same job: pay attention to the person on the other end, ship
-  before it feels safe, and be willing to find out the third version was wrong.
+          My college coach used to end every team meeting the same way: "Don't let the day get away."
+          He wasn't talking about hustle; he meant you can't make up a missed session, you only
+          ever get to run today's. Track is honest like that. You find out in 45 seconds whether
+          the work was real, and I've been chasing that same short feedback loop ever since;
+          Now, in AI products instead of on a track. Get it in front of someone, find out you
+          were wrong, go again tomorrow.
+        </p>
+        <p className="ed-thesis">
           I've always been a firm believer that the best products come from teams with empathy and pace: people who understand
-          real users deeply, ship quickly, and refine without ego. 
-          "Don't let the day get away."
+          real users deeply, ship quickly, and refine without ego.
+
         </p>
       </div>
 

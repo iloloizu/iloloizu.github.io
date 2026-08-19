@@ -58,10 +58,6 @@ function LinkTree() {
       <EdBack />
       <h2 className="ed-label">Socials</h2>
       <h1 className="ed-page-title">Let&rsquo;s connect</h1>
-      <p className="ed-page-intro">
-        Wherever you found me, whether the track, the terminal, or the timeline,
-        here&rsquo;s where everything else lives.
-      </p>
 
       <div className="ed-rows">
         {socials.map((s) => (
