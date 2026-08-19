@@ -88,13 +88,23 @@
 }
 
 @keyframes ed-expand {
-  from { max-width: 768px; }
-  to { max-width: 1200px; }
+  from {
+    max-width: 768px;
+  }
+
+  to {
+    max-width: 1200px;
+  }
 }
 
 @keyframes ed-contract {
-  from { max-width: 1200px; }
-  to { max-width: 768px; }
+  from {
+    max-width: 1200px;
+  }
+
+  to {
+    max-width: 768px;
+  }
 }
 
 /* ---- back link on interior pages ---- */
@@ -125,7 +135,7 @@
 }
 
 /* a label directly after the back link sits closer to it */
-.ed-back + .ed-label {
+.ed-back+.ed-label {
   margin-top: 40px;
 }
 
@@ -296,7 +306,7 @@
     width: 190px;
     height: 208px;
     object-fit: cover;
-    border-radius: 16px;
+
     flex-shrink: 0;
     display: block;
   }
@@ -316,7 +326,6 @@
     width: 240px;
     height: 264px;
     object-fit: cover;
-    border-radius: 16px;
     flex-shrink: 0;
     display: block;
   }
@@ -325,6 +334,11 @@
     p {
       margin: 0 0 18px;
       font-size: 16px;
+
+      /* no trailing margin: it would skew the flex centering of the photo */
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     a {
@@ -411,7 +425,8 @@
 
 /* indented promotion timeline under a company row (LinkedIn-style) */
 .ed-subroles {
-  margin: -6px 0 10px 64px; /* 48px tile + 16px gap — aligns with the row body */
+  margin: -6px 0 10px 64px;
+  /* 48px tile + 16px gap — aligns with the row body */
   padding-left: 20px;
   border-left: 1px solid var(--ed-line);
   display: flex;
