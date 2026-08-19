@@ -36,7 +36,7 @@ export default function EditorialContact({ onClose }) {
       }).then((r) => r.json())
 
       if (res.success) {
-        setStatus({ ok: true, text: 'Message sent — thank you!' })
+        setStatus({ ok: true, text: 'Message sent. Thank you!' })
         setFormData({ name: '', email: '', message: '' })
       } else {
         setStatus({ ok: false, text: res.message || 'Something went wrong. Please try again.' })

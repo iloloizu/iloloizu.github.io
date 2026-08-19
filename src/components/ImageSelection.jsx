@@ -7,7 +7,7 @@ function ImageSelection() {
         <div>
             <div className="about-info">
                 <p className="about-text">
-                I’m Ilolo Izu (e-lo-lo e-zu), a Product-oriented Full-Stack Software Engineer from Houston, TX—currently leading AI product engineering at Lawtrades, building an AI and agent-powered legal experience for a leading attorney marketplace. Former All-American Track & Field athlete turned technologist, blending technical depth with sharp communication, empathy, and adaptability. My journey from healthcare to software engineering fuels a passion for solving real user problems and building intuitive, high-impact solutions. Outside of work, I’m all about fitness, <a 
+                I’m Ilolo Izu (e-lo-lo e-zu), a Product-oriented Full-Stack Software Engineer from Houston, TX—currently leading AI product engineering at Lawtrades in New York, building an AI and agent-powered legal experience for a leading attorney marketplace. Former All-American Track & Field athlete turned technologist, blending technical depth with sharp communication, empathy, and adaptability. My journey from healthcare to software engineering fuels a passion for solving real user problems and building intuitive, high-impact solutions. Outside of work, I’m all about fitness, <a 
     href="https://www.iloloizu.com/#/portfolio" 
     className="portfolio-link"
     target="_blank"

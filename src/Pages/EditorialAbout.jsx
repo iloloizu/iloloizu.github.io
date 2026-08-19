@@ -16,7 +16,7 @@ export default function EditorialAbout() {
         <div className="ed-about-body">
           <p>
             I&rsquo;m Ilolo Izu (e&#8209;lo&#8209;lo e&#8209;zu), a product-oriented engineer from Houston, TX —
-            currently leading AI product engineering at Lawtrades, building an AI and
+            currently leading AI product engineering at Lawtrades in New York, building an AI and
             agent-powered legal experience for a leading attorney marketplace. Former
             All-American track &amp; field athlete turned technologist; my path from
             healthcare to software fuels a passion for solving real user problems.

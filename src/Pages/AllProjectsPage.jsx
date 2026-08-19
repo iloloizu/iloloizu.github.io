@@ -13,7 +13,7 @@ function AllProjectsPage() {
       <h1 className="ed-page-title">Projects</h1>
       <p className="ed-page-intro">
         Software I&rsquo;ve built across full-stack development, front-end design, and
-        backend architecture — from consulting engagements to personal experiments.
+        backend architecture, from consulting engagements to personal experiments.
       </p>
 
       <div className="ed-rows">

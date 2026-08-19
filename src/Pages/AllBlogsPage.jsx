@@ -11,7 +11,7 @@ function AllBlogsPage() {
       <h1 className="ed-page-title">Blogs</h1>
       <p className="ed-page-intro">
         Thoughts, tutorials, and insights on software development, technology trends,
-        and career growth — published on Medium.
+        and career growth, published on Medium.
       </p>
 
       <div className="ed-rows">

@@ -307,7 +307,7 @@
    ============================================================ */
 .ed-about {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
   margin-top: 16px;
   max-width: 720px;
@@ -446,6 +446,19 @@
 /* logo tile variants — mirror how LinkedIn renders company marks:
    full-bleed for logos that carry their own background, padded white
    tile for transparent glyphs (stays white in dark mode, like LinkedIn) */
+.ed-tile.ed-tile--icon {
+  color: var(--ed-muted);
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.ed-row:hover .ed-tile--icon {
+  color: var(--ed-accent);
+}
+
 .ed-tile.ed-tile--cover {
   border: none;
 
@@ -550,6 +563,16 @@
       height: 320px;
       cursor: crosshair;
       touch-action: pan-y;
+    }
+
+    .ed-hurdles-canvas {
+      width: 300px;
+      height: 320px;
+      cursor: pointer;
+      // taps only — manipulation kills double-tap zoom without trapping scroll
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
     }
 
     .ed-doodle-caption {

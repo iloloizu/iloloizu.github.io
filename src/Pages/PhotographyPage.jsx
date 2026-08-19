@@ -126,7 +126,7 @@ function PhotographyPage() {
       <h2 className="ed-label">Ongoing</h2>
       <h1 className="ed-page-title">Photography</h1>
       <p className="ed-page-intro">
-        Travel, street, and sport — shot on the road and at the track.
+        Travel, street, and sport, shot on the road and at the track.
       </p>
 
       <div className="photography-grid">

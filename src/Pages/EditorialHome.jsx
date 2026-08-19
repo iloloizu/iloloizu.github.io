@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import EditorialLayout from '../layout/EditorialLayout'
 import portfolios from '../components/allportfolios'
 import allBlogs from '../components/allBlogs'
-import EdDoodle from '../components/EdDoodle'
+import EdHurdles from '../components/EdHurdles'
 import lawtradesLogo from '../images/logos/lawtrades.png'
 import resiliaLogo from '../images/logos/resilia.png'
 import ripplematchLogo from '../images/logos/ripplematch.png'
@@ -52,8 +52,14 @@ export default function EditorialHome() {
 
       <div className="ed-intro">
         <p className="ed-thesis">
-          Great products come from teams with empathy and pace — people who understand
-          real users deeply, ship quickly, and refine without ego.
+          My college coach used to end every practice the same way: don't let the day get away.
+  He meant it about workouts, but it's held up for everything since. I build AI products
+  now (mostly things that take a tedious human process and quietly do it faster), and the
+  job turns out to be the same job: pay attention to the person on the other end, ship
+  before it feels safe, and be willing to find out the third version was wrong.
+          I've always been a firm believer that the best products come from teams with empathy and pace: people who understand
+          real users deeply, ship quickly, and refine without ego. 
+          "Don't let the day get away."
         </p>
       </div>
 
@@ -89,15 +95,11 @@ export default function EditorialHome() {
         <div className="ed-interlude-text">
           <h2 className="ed-interlude-title">I love the reps</h2>
           <p>
-            Repetition is how I learn — on the track and in the terminal. Lately the
-            reps have looked like Fortis Wealth, a personal finance platform with an
-            LLM budget assistant; Stylo, a mobile marketplace for stylists; consulting
-            builds like ServePro; and a steady stream of blog posts and photographs
-            along the way.
+            I build AI products in New York. I learn almost everything the same way, by working on it: "Hard work beats talent when talent doesn't work hard." That's how sprinting went at Texas A&M, and it's how my personal projects got built. In between there's an MBA at Rice University, a Sony a6400 I actually use, a Thursday night D&D group I've had for 10 years, and a kitchen I host out of more than I should.
           </p>
         </div>
         <figure className="ed-interlude-doodle">
-          <EdDoodle />
+          <EdHurdles />
           <figcaption className="ed-doodle-caption">The Training Plan</figcaption>
         </figure>
       </section>
