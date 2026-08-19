@@ -18,6 +18,7 @@ import AllBlogsPage from './Pages/AllBlogsPage'
 import AllProjectsPage from './Pages/AllProjectsPage'
 import LinkTree from './Pages/LinkTree'
 import PhotographyPage from './Pages/PhotographyPage'
+import VideosPage from './Pages/VideosPage'
 import EditorialHome from './Pages/EditorialHome'
 import EditorialAbout from './Pages/EditorialAbout'
 
@@ -56,6 +57,7 @@ export default function App() {
         <Route path="/blogs" element={<AllBlogsPage />} />
         <Route path="/projects" element={<AllProjectsPage />} />
         <Route path="/socials" element={<LinkTree />} />
+        <Route path="/videos" element={<VideosPage />} />
         <Route path="/portfolio" element={<PhotographyPage />} />
       </Routes>
     </div>

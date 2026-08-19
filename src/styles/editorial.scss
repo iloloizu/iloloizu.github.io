@@ -474,6 +474,17 @@
   color: var(--ed-accent);
 }
 
+/* 16:9 video thumbnail tile */
+.ed-tile.ed-tile--thumb {
+  width: 96px;
+  height: 54px;
+  border: none;
+
+  img {
+    border-radius: 8px;
+  }
+}
+
 .ed-tile.ed-tile--cover {
   border: none;
 

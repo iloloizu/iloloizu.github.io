@@ -39,6 +39,7 @@ const NAV_LINKS = [
   { label: 'About', to: '/about' },
   { label: 'Projects', to: '/projects' },
   { label: 'Blogs', to: '/blogs' },
+  { label: 'Videos', to: '/videos' },
   { label: 'Photography', to: '/portfolio' },
 ]
 
