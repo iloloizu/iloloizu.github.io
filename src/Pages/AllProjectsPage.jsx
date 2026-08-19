@@ -29,9 +29,21 @@ function AllProjectsPage() {
                   {project.madeAt}
                   {project.link1 && (
                     <span className="ed-row-links">
-                      <a href={project.link1} target="_blank" rel="noreferrer">{project.icon1}</a>
+                      {/* the whole row is already an <a> to link1; nested anchors
+                          are invalid HTML, so label it and use a button for link2 */}
+                      <span>{project.icon1}</span>
                       {project.link2 && (
-                        <a href={project.link2} target="_blank" rel="noreferrer">{project.icon2}</a>
+                        <button
+                          type="button"
+                          className="ed-row-linkbtn"
+                          onClick={(e) => {
+                            e.preventDefault()
+                            e.stopPropagation()
+                            window.open(project.link2, '_blank', 'noopener')
+                          }}
+                        >
+                          {project.icon2}
+                        </button>
                       )}
                     </span>
                   )}

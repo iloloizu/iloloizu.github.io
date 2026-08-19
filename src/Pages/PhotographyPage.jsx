@@ -83,7 +83,7 @@ function LazyPhoto({ src, alt, eager, onClick }) {
   return (
     <div ref={ref} className="photo-item" onClick={onClick}>
       {visible ? (
-        <img src={src} alt={alt} decoding="async" fetchPriority={eager ? 'high' : 'auto'} />
+        <img src={src} alt={alt} decoding="async" fetchpriority={eager ? 'high' : 'auto'} />
       ) : (
         <div style={{ height: 300, borderRadius: 4, background: 'rgba(127, 127, 127, 0.08)' }} />
       )}

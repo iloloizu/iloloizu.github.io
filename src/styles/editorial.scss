@@ -725,16 +725,26 @@
   gap: 12px;
   margin-left: 10px;
 
-  a {
+  a,
+  span,
+  .ed-row-linkbtn {
     font-family: var(--ed-mono);
     font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--ed-accent);
+  }
 
-    &:hover {
-      text-decoration: underline;
-    }
+  a:hover,
+  .ed-row-linkbtn:hover {
+    text-decoration: underline;
+  }
+
+  .ed-row-linkbtn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
   }
 }
 
