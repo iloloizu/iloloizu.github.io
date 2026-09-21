@@ -95,15 +95,9 @@ export default function EditorialHome() {
       <hr className="ed-divider" />
 
       <section className="ed-interlude">
-        <div className="ed-interlude-text">
-          <h2 className="ed-interlude-title">I love the reps</h2>
-          <p>
-            I build AI products in New York. I learn almost everything the same way, by working on it: "Hard work beats talent when talent doesn't work hard." That's how sprinting went at Texas A&M, and it's how my personal projects got built. In between there's an MBA at Rice University, a Sony a6400 I actually use, a Thursday night D&D group I've had for 10 years, and a kitchen I host out of more than I should.
-          </p>
-        </div>
         <figure className="ed-interlude-doodle">
           <EdHurdles />
-          <figcaption className="ed-doodle-caption">The Training Plan</figcaption>
+          <figcaption className="ed-doodle-caption">Five worlds. One endless run.</figcaption>
         </figure>
       </section>
 

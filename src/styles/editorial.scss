@@ -572,12 +572,13 @@
 }
 
 /* ============================================================
-   Interlude — serif blurb beside the interactive doodle
+   Interlude — introduction above the interactive runner
    ============================================================ */
 .ed-interlude {
   display: flex;
-  align-items: center;
-  gap: 48px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 28px;
   margin-top: 72px;
 
   .ed-interlude-text {
@@ -599,6 +600,8 @@
   }
 
   .ed-interlude-doodle {
+    width: 100%;
+    min-width: 0;
     flex-shrink: 0;
     margin: 0;
     display: flex;
@@ -974,3 +977,5 @@
     align-items: flex-start;
   }
 }
+// Remove the browser's default gutter on the full-width editorial shell.
+body:has(.editorial) { margin: 0; }
