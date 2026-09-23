@@ -8,10 +8,22 @@ import port8 from '../images/Stylo.png'
 import port9 from '../images/ServePro.png'
 import port10 from '../images/port10.png'
 import fortiswealth from '../images/fortiswealth.png'
+import partyMotion from '../images/party-motion.jpg'
 
 const port2 = 'https://miro.medium.com/max/1400/1*ZPhW7TFH7S42jYPtRZahmA.png';
 
 const portfolios = [
+    {
+        id: 11,
+        category: "Front-End",
+        image: partyMotion,
+        title: 'Party Motion',
+        paragraph: "A Chrome extension that brings Roll20 tokens to life with directional walking sprites. Built a character workshop for importing sprite sheets, previewing animations, and adjusting walking and idle speeds, with portable party packs for sharing artwork and settings. Everything is stored locally in the browser.",
+        link1: 'https://chromewebstore.google.com/detail/party-motion/gpfhgpdbldohinincknfjohcdcikdmld',
+        icon1: 'Chrome Web Store',
+        year: '2026',
+        madeAt: 'Personal Project'
+    },
     {
         id: 0,
         category: "Full-Stack",
